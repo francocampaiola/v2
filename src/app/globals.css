@@ -24,3 +24,14 @@ body {
 .toggle {
   background: rgb(27, 40, 69);
 }
+
+.active .nav-text {
+  --tw-text-opacity:1;
+  color:rgb(226 232 240/var(--tw-text-opacity));
+}
+
+.active .nav-indicator {
+  width:4rem;
+  --tw-bg-opacity:1;
+  background-color:rgb(226 232 240/var(--tw-bg-opacity))
+}
