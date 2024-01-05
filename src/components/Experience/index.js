@@ -4,6 +4,9 @@ import ExperienceCard from "../Card";
 const Experience = () => {
   return (
     <>
+      <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+        Experience
+      </h2>
       <ExperienceCard
         dateInit={"2017"}
         dateEnd={"Present"}
