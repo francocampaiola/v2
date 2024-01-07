@@ -3,7 +3,7 @@ import React from "react";
 const Social = () => {
   return (
     <ul
-      className="ml-1 mt-6 md:mt-0 sm:mt-8 lg:mt-24 flex items-center"
+      className="ml-1 mt-12 md:mt-10 sm:mt-8 lg:mt-12 flex items-center"
       aria-label="Social media"
     >
       <li className="mr-5 text-xs">
