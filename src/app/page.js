@@ -1,13 +1,14 @@
+import React from "react";
+import { LanguageProvider } from "@/context/LanguageContext";
 import Content from "@/components/Content";
 import Sidebar from "@/components/Sidebar";
-import React from "react";
 
 const Page = () => {
   return (
-    <>
+    <LanguageProvider>
       <Sidebar />
       <Content />
-    </>
+    </LanguageProvider>
   );
 };
 
