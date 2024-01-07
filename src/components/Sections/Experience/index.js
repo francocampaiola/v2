@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import ExperienceCard from "../Card";
 import { useLanguage } from "@/context/LanguageContext";
+import ExperienceCard from "../../Card/ExperienceCard";
 
 const Experience = () => {
   const { language } = useLanguage();
@@ -43,7 +43,7 @@ const Experience = () => {
             <span>
               Ver <span></span>
               <span className="inline-block">
-                más
+                detalle completo
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"

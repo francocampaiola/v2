@@ -57,18 +57,16 @@ const ExperienceCard = ({
               </div>
             </div>
           </h3>
-          <p className="mt-2 text-sm leading-normal">
-            {description}
-          </p>
-        <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
-        {technologies.map((technology, index) => (
-            <li className="mr-1.5 mt-2" key={index}>
+          <p className="mt-2 text-sm leading-normal">{description}</p>
+          <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+            {technologies.map((technology, index) => (
+              <li className="mr-1.5 mt-2" key={index}>
                 <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                    {technology}
+                  {technology}
                 </div>
-            </li>
-        ))}
-        </ul>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

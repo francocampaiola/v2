@@ -18,7 +18,8 @@ const ProjectCard = () => {
               <span>
                 Build a Spotify Connected
                 <span className="inline-block">
-                  {" "} App
+                  {" "}
+                  App
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"

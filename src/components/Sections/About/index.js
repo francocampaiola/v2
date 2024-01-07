@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import AboutCard from "../../Card/AboutCard";
 
-const AboutCard = () => {
-  const { language } = useLanguage();
+const About = () => {
+
+    const { language } = useLanguage();
 
   return (
     <section
@@ -15,13 +17,9 @@ const AboutCard = () => {
           <p>{language === "es" ? "Acerca de" : "About"}</p>
         </h2>
       </div>
-      <div>
-        <p className="mb-4">{language === "es" ? "Español" : "Ingles"}</p>
-        <p className="mb-4">{language === "es" ? "Español" : "Ingles"}</p>
-        <p>{language === "es" ? "Español" : "Ingles"}</p>
-      </div>
+      <AboutCard />
     </section>
   );
 };
 
-export default AboutCard;
+export default About;

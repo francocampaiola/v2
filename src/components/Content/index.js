@@ -1,15 +1,15 @@
 import React from "react";
-import AboutCard from "../AboutCard";
-import Experience from "../Experience";
-import Projects from "../Projects";
-import Footer from "../Footer";
+import Experience from "../Sections/Experience";
+import Projects from "../Sections/Projects";
+import Footer from "../Sections/Footer";
 import LanguageSelector from "../LanguageSelector";
+import About from "../Sections/About";
 
 const Content = ({}) => {
   return (
     <main id="content" className="pt-14 lg:pt-24 lg:w-1/2 lg:py-24">
       <LanguageSelector />
-      <AboutCard />
+      <About />
       <Experience />
       <Projects />
       <Footer />
