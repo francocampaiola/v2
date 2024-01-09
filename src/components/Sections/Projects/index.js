@@ -1,8 +1,12 @@
+"use client"
 import React from "react";
+import { useLanguage } from "@/context/LanguageContext";
 import ProjectCard from "../../Card/ProjectCard";
-import Link from 'next/link'
+import Link from "next/link";
 
 const Projects = () => {
+  const { language } = useLanguage();
+
   return (
     <section
       id="projects"
@@ -16,9 +20,30 @@ const Projects = () => {
       </div>
       <div>
         <ul className="group/list">
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+          {language === "es" ? (
+            <ProjectCard
+              name={"Cumpleanito"}
+              description={
+                "Cumpleanito es un proyecto para cargar los cumpleaños de tus amigos y familiares y que puedas verificar cuando se acerque el día de su cumpleaños. "
+              }
+              image={"cumpleanito.png"}
+              technologies={["Next.js", "ChakraUI", "TypeScript"]}
+              url="https://cumpleanito.app"
+            />
+          ) : (
+            <ProjectCard
+              name={"Cumpleanito"}
+              description={
+                "Cumpleanito is a project to load the birthdays of your friends and family and that you can verify when their birthday is approaching."
+              }
+              image={"cumpleanito.png"}
+              technologies={["Next.js", "ChakraUI", "TypeScript"]}
+              url="https://cumpleanito.app"
+            />
+          )}
+
+          <ProjectCard />
+          <ProjectCard />
         </ul>
         <div className="mt-12">
           <Link

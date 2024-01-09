@@ -25,7 +25,7 @@ const Experience = () => {
           company={"Novocap S.A."}
           companyUrl={"https://www.novocap.com"}
           description={
-            "Como Analista de Sistemas, me encargué de coordinar la implementación y mantenimiento de SAP S/4 HANA, desarrollar sistemas internos bajo metodologías ágiles SCRUM y mejorar los procesos de OnBoarding en IT. También me encargué de gestionar la creación y mantenimiento de sitios web internos, administrar redes y servidores en Active Directory, manejar usuarios y permisos en Office 365 y SharePoint Online, y cuidar de la flota de dispositivos móviles de la empresa."
+            "Me encargué de coordinar la implementación y mantenimiento de SAP S/4 HANA, desarrollar sistemas internos bajo metodologías ágiles SCRUM y mejorar los procesos de OnBoarding en IT. También me encargo de gestionar la creación y mantenimiento de sitios web internos, administrar redes y servidores en Active Directory, manejar usuarios y permisos en Office 365 y SharePoint Online, y cuidar de la flota de dispositivos móviles de la empresa."
           }
           technologies={[
             "SAP S/4 HANA",
@@ -45,7 +45,7 @@ const Experience = () => {
           company={"Novocap S.A."}
           companyUrl={"https://www.novocap.com"}
           description={
-            "As a Systems Analyst, I was in charge of coordinating the implementation and maintenance of SAP S/4 HANA, developing internal systems under SCRUM agile methodologies and improving IT OnBoarding processes. I was also in charge of managing the creation and maintenance of internal websites, administering networks and servers in Active Directory, managing users and permissions in Office 365 and SharePoint Online, and taking care of the company's fleet of mobile devices."
+            "I was in charge of coordinating the implementation and maintenance of SAP S/4 HANA, developing internal systems under SCRUM agile methodologies and improving OnBoarding processes in IT. I am also in charge of managing the creation and maintenance of internal websites, administering networks and servers in Active Directory, managing users and permissions in Office 365 and SharePoint Online, and taking care of the company's fleet of mobile devices."
           }
           technologies={[
             "SAP S/4 HANA",

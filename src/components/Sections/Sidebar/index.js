@@ -11,15 +11,15 @@ const Sidebar = () => {
     <>
       <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
         <div>
-          <h1 className="mb-2 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
             Franco Campaiola
           </h1>
-          <h2 className="mb-2 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
+          <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
             {language === "es"
-              ? "Desarrollador web frontend"
-              : "Frontend web developer"}
+              ? "Desarrollador web FrontEnd"
+              : "FrontEnd Web Developer"}
           </h2>
-          <p className="max-w-xs leading-normal">
+          <p className="mt-3 max-w-xs leading-normal">
             {language === "es"
               ? "Creo productos digitales accesibles y adaptables, diseñados para destacar en la web y adaptarse a diversos entornos."
               : "I create accessible and adaptable digital products, designed to stand out on the web and adapt to various  environments."}
