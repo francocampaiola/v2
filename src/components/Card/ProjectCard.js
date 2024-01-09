@@ -1,6 +1,13 @@
 import React from "react";
 
-const ProjectCard = () => {
+const ProjectCard = ({
+  name,
+  description,
+  image,
+  technologies,
+  url,
+  github,
+}) => {
   return (
     <li className="mb-12">
       <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
@@ -16,10 +23,7 @@ const ProjectCard = () => {
             >
               <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
               <span>
-                Build a Spotify Connected
-                <span className="inline-block">
-                  {" "}
-                  App
+                Build a Spotify Connected App
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
@@ -34,7 +38,6 @@ const ProjectCard = () => {
                     ></path>
                   </svg>
                 </span>
-              </span>
             </a>
           </h3>
           <p className="mt-2 text-sm leading-normal">
@@ -42,6 +45,13 @@ const ProjectCard = () => {
             Web API. Topics covered include the principles of REST APIs, user
             auth flows, Node, Express, React, Styled Components, and more.
           </p>
+          <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+              <li className="mr-1.5 mt-2">
+                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                  React
+                </div>
+              </li>
+          </ul>
         </div>
         <img
           alt="Build a Spotify Connected App Newline course marketing card"

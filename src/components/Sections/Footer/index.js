@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       {language === "es" ? (
-        <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+        <footer className="max-w-md pb-0 text-sm text-slate-500 sm:pb-0">
           <p>
             Diseñado en{" "}
             <a

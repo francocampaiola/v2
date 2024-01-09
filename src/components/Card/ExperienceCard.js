@@ -32,7 +32,8 @@ const ExperienceCard = ({
                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                 <span>
                   {position}
-                  <span className="inline-block">
+                  <span className="inline-block"> 
+                   {" · "}
                     {company}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -50,11 +51,6 @@ const ExperienceCard = ({
                   </span>
                 </span>
               </a>
-            </div>
-            <div>
-              <div className="text-slate-500" aria-hidden="true">
-                {position}
-              </div>
             </div>
           </h3>
           <p className="mt-2 text-sm leading-normal">{description}</p>

@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "../../Card/ProjectCard";
+import Link from 'next/link'
 
 const Projects = () => {
   return (
@@ -20,10 +21,10 @@ const Projects = () => {
             <ProjectCard />
         </ul>
         <div className="mt-12">
-          <a
+          <Link
             className="inline-flex items-center leading-tight font-semibold text-slate-200 group"
             aria-label="View Full Project Archive"
-            href="/archive"
+            href="/projects"
           >
             <span>
               <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
@@ -48,7 +49,7 @@ const Projects = () => {
                 </svg>
               </span>
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
