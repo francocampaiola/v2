@@ -137,7 +137,7 @@ const Footer = () => {
             >
               Brittany Chiang
             </a>
-            's portfolio.
+            portfolio.
           </p>
         </footer>
       )}
