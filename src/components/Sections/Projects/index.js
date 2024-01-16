@@ -46,7 +46,7 @@ const Projects = () => {
                 }
                 image={"portfolio.png"}
                 technologies={["Next.js", "TailwindCSS", "JavaScript"]}
-                url={"francocampaiola.com"}
+                url={"https://francocampaiola.com"}
               />
             </>
           ) : (
