@@ -13,7 +13,7 @@ const ProjectCard = ({ name, description, image, technologies = [], url }) => {
               href={`${url}`}
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="Build a Spotify Connected App (opens in a new tab)"
+              aria-label={name}
             >
               <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
               <span>
@@ -51,7 +51,7 @@ const ProjectCard = ({ name, description, image, technologies = [], url }) => {
           </ul>
         </div>
         <img
-          alt="Build a Spotify Connected App Newline course marketing card"
+          alt={name}
           loading="lazy"
           width="200"
           height="48"

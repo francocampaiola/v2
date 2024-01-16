@@ -1,8 +1,7 @@
-"use client"
+"use client";
 import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import ProjectCard from "../../Card/ProjectCard";
-import Link from "next/link";
 
 const Projects = () => {
   const { language } = useLanguage();
@@ -15,37 +14,74 @@ const Projects = () => {
     >
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
-          Projects
+          {language === "es" ? "Projectos" : "Projects"}
         </h2>
       </div>
       <div>
         <ul className="group/list">
           {language === "es" ? (
-            <ProjectCard
-              name={"Cumpleanito"}
-              description={
-                "Cumpleanito es un proyecto para cargar los cumpleaños de tus amigos y familiares y que puedas verificar cuando se acerque el día de su cumpleaños. "
-              }
-              image={"cumpleanito.png"}
-              technologies={["Next.js", "ChakraUI", "TypeScript"]}
-              url="https://cumpleanito.app"
-            />
+            <>
+              <ProjectCard
+                name={"Cumpleanito"}
+                description={
+                  "Cumpleanito es un proyecto para cargar los cumpleaños de tus amigos y familiares y que puedas verificar cuando se acerque el día de su cumpleaños. "
+                }
+                image={"cumpleanito.png"}
+                technologies={["Next.js", "ChakraUI", "TypeScript"]}
+                url="https://cumpleanito.app"
+              />
+              <ProjectCard
+                name={"Propinapp"}
+                description={
+                  "Propinapp es una aplicación para calcular la propina de una cuenta. Incluye una simulación para agregar dinero a tu cuenta y poder brindarle propina a distintas personas."
+                }
+                image={"propinapp.png"}
+                technologies={["Vue.js", "Vuetify", "JavaScript"]}
+                url={"https://propinapp-2.vercel.app/"}
+              />
+              <ProjectCard
+                name={"Portfolio"}
+                description={
+                  "Portfolio es mi portafolio personal, donde puedes ver mis proyectos y contactarme."
+                }
+                image={"portfolio.png"}
+                technologies={["Next.js", "TailwindCSS", "JavaScript"]}
+                url={"francocampaiola.com"}
+              />
+            </>
           ) : (
-            <ProjectCard
-              name={"Cumpleanito"}
-              description={
-                "Cumpleanito is a project to load the birthdays of your friends and family and that you can verify when their birthday is approaching."
-              }
-              image={"cumpleanito.png"}
-              technologies={["Next.js", "ChakraUI", "TypeScript"]}
-              url="https://cumpleanito.app"
-            />
+            <>
+              <ProjectCard
+                name={"Cumpleanito"}
+                description={
+                  "Cumpleanito is a project to load the birthdays of your friends and family and that you can verify when their birthday is approaching."
+                }
+                image={"cumpleanito.png"}
+                technologies={["Next.js", "ChakraUI", "TypeScript"]}
+                url="https://cumpleanito.app"
+              />
+              <ProjectCard
+                name={"Propinapp"}
+                description={
+                  "Propinapp is an application to calculate the tip of a bill. It includes a simulation to add money to your account and be able to tip different people."
+                }
+                image={"propinapp.png"}
+                technologies={["Vue.js", "Vuetify", "JavaScript"]}
+                url={"https://propinapp-2.vercel.app/"}
+              />
+              <ProjectCard
+                name={"Portfolio"}
+                description={
+                  "Portfolio is my personal portfolio, where you can see my projects and contact me."
+                }
+                image={"portfolio.png"}
+                technologies={["Next.js", "TailwindCSS", "JavaScript"]}
+                url={"https://francocampaiola.com"}
+              />
+            </>
           )}
-
-          <ProjectCard />
-          <ProjectCard />
         </ul>
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <Link
             className="inline-flex items-center leading-tight font-semibold text-slate-200 group"
             aria-label="View Full Project Archive"
@@ -75,7 +111,7 @@ const Projects = () => {
               </span>
             </span>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
