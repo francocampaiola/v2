@@ -17,7 +17,7 @@ const ExperienceCard = ({
           className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
           aria-label="2018 to Present"
         >
-          {dateInit} — {dateEnd}
+          {dateInit} <br /> — {dateEnd}
         </header>
         <div className="z-10 sm:col-span-6">
           <h3 className="font-medium leading-snug text-slate-200">

@@ -31,12 +31,12 @@ const Projects = () => {
                 url="https://cumpleanito.app"
               />
               <ProjectCard
-                name={"Propinapp"}
+                name={"Propinita"}
                 description={
-                  "Propinapp es una aplicación para calcular la propina de una cuenta. Incluye una simulación para agregar dinero a tu cuenta y poder brindarle propina a distintas personas."
+                  "Propinita es una aplicación web para vincular tu billetera virtual y poder recibir propinas de tus clientes."
                 }
                 image={"propinapp.png"}
-                technologies={["Vue.js", "Vuetify", "JavaScript"]}
+                technologies={["Next.js", "ChakraUI", "TypeScript"]}
                 url={"https://propinapp-2.vercel.app/"}
               />
               <ProjectCard
@@ -61,13 +61,13 @@ const Projects = () => {
                 url="https://cumpleanito.app"
               />
               <ProjectCard
-                name={"Propinapp"}
+                name={"Propinita"}
                 description={
-                  "Propinapp is an application to calculate the tip of a bill. It includes a simulation to add money to your account and be able to tip different people."
+                  "Propinita is a web application to link your virtual wallet and be able to receive tips from your clients."
                 }
                 image={"propinapp.png"}
-                technologies={["Vue.js", "Vuetify", "JavaScript"]}
-                url={"https://propinapp-2.vercel.app/"}
+                technologies={["Next.js", "ChakraUI", "TypeScript"]}
+                url={"https://landing.propinita.app"}
               />
               <ProjectCard
                 name={"Portfolio"}
