@@ -18,29 +18,66 @@ const Experience = () => {
         </h2>
       </div>
       {language === "es" ? (
-        <ExperienceCard
-          dateInit={"2017"}
-          dateEnd={"Presente"}
-          position={"Analista de Sistemas Ssr "}
-          company={"Novocap S.A."}
-          companyUrl={"https://www.novocap.com"}
+        <>
+          <ExperienceCard
+            dateInit={"May 2024"}
+            dateEnd={"Presente"}
+            position={"Full Stack Developer"}
+            company={"Polynomium"}
+            companyUrl={"https://www.polynomium.com"}
+            description={
+              "Actualmente en el proyecto Megapix, diseño y desarrollo interfaces de usuario intuitivas con Next.js, colaborando estrechamente con diseñadores para asegurar experiencias fluidas y atractivas. Implemento la lógica de negocio en el frontend, gestiono el estado de la aplicación y optimizo la comunicación con las APIs backend. También manejo la integración continua y despliegue, asegurando actualizaciones rápidas y sin problemas."
+            }
+            technologies={[
+              "React",
+              "Next.js",
+              "Node.js",
+              "Supabase",
+              "Chakra UI",
+            ]}
+          />
+          <ExperienceCard
+            dateInit={"Jul 2017"}
+            dateEnd={"May 2024"}
+            position={"Analista de Sistemas Ssr "}
+            company={"Novocap S.A."}
+            companyUrl={"https://www.novocap.com"}
+            description={
+              "Me encargué de coordinar la implementación y mantenimiento de SAP S/4 HANA, desarrollar sistemas internos bajo metodologías ágiles SCRUM y mejorar los procesos de OnBoarding en IT. También me encargo de gestionar la creación y mantenimiento de sitios web internos, administrar redes y servidores en Active Directory, manejar usuarios y permisos en Office 365 y SharePoint Online, y cuidar de la flota de dispositivos móviles de la empresa."
+            }
+            technologies={[
+              "SAP S/4 HANA",
+              "Git",
+              "Powershell",
+              "Docker",
+              "Microsoft Azure",
+              "Microsoft Teams",
+              "Office 365",
+            ]}
+          />
+        </>
+      ) : (
+        <>
+        <ExperienceCard 
+          dateInit={"May 2024"}
+          dateEnd={"Present"}
+          position={"Full Stack Developer"}
+          company={"Polynomium"}
+          companyUrl={"https://www.polynomium.com"}
           description={
-            "Me encargué de coordinar la implementación y mantenimiento de SAP S/4 HANA, desarrollar sistemas internos bajo metodologías ágiles SCRUM y mejorar los procesos de OnBoarding en IT. También me encargo de gestionar la creación y mantenimiento de sitios web internos, administrar redes y servidores en Active Directory, manejar usuarios y permisos en Office 365 y SharePoint Online, y cuidar de la flota de dispositivos móviles de la empresa."
+            "Currently on the Megapix project, I design and develop intuitive user interfaces with Next.js, collaborating closely with designers to ensure smooth and engaging experiences. I implement business logic on the frontend, manage the application state, and optimize communication with backend APIs. I also handle continuous integration and deployment, ensuring fast and seamless updates."
           }
           technologies={[
-            "SAP S/4 HANA",
-            "Git",
-            "Powershell",
-            "Docker",
-            "Microsoft Azure",
-            "Microsoft Teams",
-            "Office 365",
+            "React",
+            "Next.js",
+            "Node.js",
+            "Supabase",
+            "Chakra UI",
           ]}
         />
-      ) : (
         <ExperienceCard
-          dateInit={"2017"}
-          dateEnd={"Present"}
+          dateInit={"Jul 2017"}
+          dateEnd={"May 2024"}
           position={"Ssr. Systems Analyst "}
           company={"Novocap S.A."}
           companyUrl={"https://www.novocap.com"}
@@ -57,6 +94,7 @@ const Experience = () => {
             "Office 365",
           ]}
         />
+        </>
       )}
 
       <div className="mt-2">
