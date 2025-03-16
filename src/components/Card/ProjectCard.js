@@ -50,16 +50,17 @@ const ProjectCard = ({ name, description, image, technologies = [], url }) => {
             ))}
           </ul>
         </div>
-        <img
-          alt={name}
-          loading="lazy"
-          width="200"
-          height="48"
-          decoding="async"
-          data-nimg="1"
-          className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-          src={image}
-        />
+        <div className="sm:order-1 sm:col-span-2 flex justify-center">
+          <img
+            alt={name}
+            loading="lazy"
+            decoding="async"
+            data-nimg="1"
+            className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30
+             w-full h-40 sm:h-48 md:h-56 lg:w-[300px] lg:h-[180px] xl:w-[5000px] xl:h-[100px] object-cover"
+            src={image}
+          />
+        </div>
       </div>
     </li>
   );

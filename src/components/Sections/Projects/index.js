@@ -22,22 +22,22 @@ const Projects = () => {
           {language === "es" ? (
             <>
               <ProjectCard
-                name={"Cumpleanito"}
+                name={"Megapix"}
                 description={
-                  "Cumpleanito es un proyecto para cargar los cumpleaños de tus amigos y familiares y que puedas verificar cuando se acerque el día de su cumpleaños. "
+                  "Megapix es una plataforma tecnológica diseñada para facilitar las transacciones financieras entre Argentina y Brasil. Integrada con la tecnología PIX del Banco Central de Brasil, permite a individuos, pymes y grandes empresas argentinas ampliar su alcance comercial, mientras que los usuarios brasileños pueden realizar transacciones inmediatas sin complicaciones ni aplicaciones adicionales."
                 }
-                image={"cumpleanito.png"}
+                image={"megapix.jpg"}
                 technologies={["Next.js", "ChakraUI", "TypeScript"]}
-                url="https://cumpleanito.app"
+                url="https://francocampaiola.com/projects/megapix"
               />
               <ProjectCard
                 name={"Propinita"}
                 description={
                   "Propinita es una aplicación web para vincular tu billetera virtual y poder recibir propinas de tus clientes."
                 }
-                image={"propinapp.png"}
+                image={"propinita.png"}
                 technologies={["Next.js", "ChakraUI", "TypeScript"]}
-                url={"https://propinapp-2.vercel.app/"}
+                url={"https://landing.propinita.app"}
               />
               <ProjectCard
                 name={"Portfolio"}
@@ -52,20 +52,20 @@ const Projects = () => {
           ) : (
             <>
               <ProjectCard
-                name={"Cumpleanito"}
+                name={"Megapix"}
                 description={
-                  "Cumpleanito is a project to load the birthdays of your friends and family and that you can verify when their birthday is approaching."
+                  "Megapix is a technological platform designed to facilitate financial transactions between Argentina and Brazil. Integrated with the PIX technology from the Central Bank of Brazil, it allows individuals, SMEs, and large Argentine companies to expand their commercial reach, while Brazilian users can conduct immediate transactions without complications or additional applications."
                 }
-                image={"cumpleanito.png"}
+                image={"megapix.jpg"}
                 technologies={["Next.js", "ChakraUI", "TypeScript"]}
-                url="https://cumpleanito.app"
+                url="https://francocampaiola.com/projects/megapix"
               />
               <ProjectCard
                 name={"Propinita"}
                 description={
                   "Propinita is a web application to link your virtual wallet and be able to receive tips from your clients."
                 }
-                image={"propinapp.png"}
+                image={"propinita.png"}
                 technologies={["Next.js", "ChakraUI", "TypeScript"]}
                 url={"https://landing.propinita.app"}
               />

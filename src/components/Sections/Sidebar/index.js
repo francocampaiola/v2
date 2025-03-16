@@ -15,9 +15,7 @@ const Sidebar = () => {
             Franco Campaiola
           </h1>
           <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-            {language === "es"
-              ? "Desarrollador web fullstack"
-              : "Fullstack web developer"}
+            {language === "es" ? "Desarrollador frontend" : "Frontend Engineer"}
           </h2>
           <p className="mt-3 max-w-xs leading-normal">
             {language === "es"

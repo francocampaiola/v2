@@ -22,18 +22,18 @@ const Experience = () => {
           <ExperienceCard
             dateInit={"May 2024"}
             dateEnd={"Presente"}
-            position={"Full Stack Developer"}
+            position={"Ingeniero frontend "}
             company={"Polynomium"}
-            companyUrl={"https://www.polynomium.com"}
             description={
-              "Actualmente en el proyecto Megapix, diseño y desarrollo interfaces de usuario intuitivas con Next.js, colaborando estrechamente con diseñadores para asegurar experiencias fluidas y atractivas. Implemento la lógica de negocio en el frontend, gestiono el estado de la aplicación y optimizo la comunicación con las APIs backend. También manejo la integración continua y despliegue, asegurando actualizaciones rápidas y sin problemas."
+              "Participé en el proyecto Megapix, una plataforma de pagos integrada con el sistema PIX utilizado en Brasil, como desarrollador frontend. Megapix es una aplicación web desarrollada con el framework Next.js de React, donde utilizamos TypeScript como lenguaje de programación, ChakraUI como librería de componentes, react-hook-form para la gestión de formularios, TanStack Query para el manejo de datos y Zod para la validación de entradas en los formularios. El proyecto se llevó a cabo utilizando SCRUM con Jira, Docker para ejecutar el código y configurar entornos controlados, y Sentry para el monitoreo de errores."
             }
             technologies={[
+              "TypeScript",
               "React",
               "Next.js",
-              "Node.js",
-              "Supabase",
+              "Docker",
               "Chakra UI",
+              "Jira",
             ]}
           />
           <ExperienceCard
@@ -58,42 +58,42 @@ const Experience = () => {
         </>
       ) : (
         <>
-        <ExperienceCard 
-          dateInit={"May 2024"}
-          dateEnd={"Present"}
-          position={"Full Stack Developer"}
-          company={"Polynomium"}
-          companyUrl={"https://www.polynomium.com"}
-          description={
-            "Currently on the Megapix project, I design and develop intuitive user interfaces with Next.js, collaborating closely with designers to ensure smooth and engaging experiences. I implement business logic on the frontend, manage the application state, and optimize communication with backend APIs. I also handle continuous integration and deployment, ensuring fast and seamless updates."
-          }
-          technologies={[
-            "React",
-            "Next.js",
-            "Node.js",
-            "Supabase",
-            "Chakra UI",
-          ]}
-        />
-        <ExperienceCard
-          dateInit={"Jul 2017"}
-          dateEnd={"May 2024"}
-          position={"Ssr. Systems Analyst "}
-          company={"Novocap S.A."}
-          companyUrl={"https://www.novocap.com"}
-          description={
-            "I was in charge of coordinating the implementation and maintenance of SAP S/4 HANA, developing internal systems under SCRUM agile methodologies and improving OnBoarding processes in IT. I am also in charge of managing the creation and maintenance of internal websites, administering networks and servers in Active Directory, managing users and permissions in Office 365 and SharePoint Online, and taking care of the company's fleet of mobile devices."
-          }
-          technologies={[
-            "SAP S/4 HANA",
-            "Git",
-            "Powershell",
-            "Docker",
-            "Microsoft Azure",
-            "Microsoft Teams",
-            "Office 365",
-          ]}
-        />
+          <ExperienceCard
+            dateInit={"May 2024"}
+            dateEnd={"Present"}
+            position={"Frontend Engineer"}
+            company={"Polynomium"}
+            description={
+              "I participated in the Megapix project, a payment platform integrated with the PIX system used in Brazil, as a frontend developer.  Megapix is a web application built with React's Next.js framework, using TypeScript as the programming language, ChakraUI as the component library, react-hook-form for form management, TanStack Query for data handling, and Zod for form input validation.  The project was developed following the SCRUM methodology with Jira, using Docker to run the code and set up controlled environments, and Sentry for error monitoring."
+            }
+            technologies={[
+              "TypeScript",
+              "React",
+              "Next.js",
+              "Docker",
+              "Chakra UI",
+              "Jira",
+            ]}
+          />
+          <ExperienceCard
+            dateInit={"Jul 2017"}
+            dateEnd={"May 2024"}
+            position={"Ssr. Systems Analyst "}
+            company={"Novocap S.A."}
+            companyUrl={"https://www.novocap.com"}
+            description={
+              "I was in charge of coordinating the implementation and maintenance of SAP S/4 HANA, developing internal systems under SCRUM agile methodologies and improving OnBoarding processes in IT. I am also in charge of managing the creation and maintenance of internal websites, administering networks and servers in Active Directory, managing users and permissions in Office 365 and SharePoint Online, and taking care of the company's fleet of mobile devices."
+            }
+            technologies={[
+              "SAP S/4 HANA",
+              "Git",
+              "Powershell",
+              "Docker",
+              "Microsoft Azure",
+              "Microsoft Teams",
+              "Office 365",
+            ]}
+          />
         </>
       )}
 

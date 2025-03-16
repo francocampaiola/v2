@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
+import { redirect } from "next/navigation";
 
 const Projects = () => {
-  return (
-    <div>Projects</div>
-  )
-}
+  redirect("/");
+  return <div>Projects</div>;
+};
 
-export default Projects
+export default Projects;
