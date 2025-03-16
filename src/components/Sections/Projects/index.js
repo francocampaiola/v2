@@ -28,7 +28,8 @@ const Projects = () => {
                 }
                 image={"megapix.jpg"}
                 technologies={["Next.js", "ChakraUI", "TypeScript"]}
-                url="https://francocampaiola.com/projects/megapix"
+                url="/projects/megapix"
+                targetBlank={false}
               />
               <ProjectCard
                 name={"Propinita"}
@@ -58,7 +59,7 @@ const Projects = () => {
                 }
                 image={"megapix.jpg"}
                 technologies={["Next.js", "ChakraUI", "TypeScript"]}
-                url="https://francocampaiola.com/projects/megapix"
+                url="/projects/megapix"
               />
               <ProjectCard
                 name={"Propinita"}

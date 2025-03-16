@@ -1,7 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
-const ProjectCard = ({ name, description, image, technologies = [], url }) => {
+const ProjectCard = ({
+  name,
+  description,
+  image,
+  technologies = [],
+  url,
+  targetBlank,
+}) => {
   return (
     <li className="mb-12">
       <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
@@ -11,7 +18,7 @@ const ProjectCard = ({ name, description, image, technologies = [], url }) => {
             <Link
               className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
               href={`${url}`}
-              target="_blank"
+              target={targetBlank ? "_blank" : "_self"}
               rel="noreferrer noopener"
               aria-label={name}
             >
