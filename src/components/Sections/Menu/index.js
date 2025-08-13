@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect, useRef } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -6,17 +6,33 @@ const Menu = () => {
   const { language } = useLanguage();
   const [menuItems, setMenuItems] = useState([
     { id: "about", title_es: "Acerca de mí", title_en: "About", active: true },
-    { id: "experience", title_es: "Experiencia", title_en: "Experience", active: false },
-    { id: "projects", title_es: "Proyectos", title_en: "Projects", active: false },
+    {
+      id: "experience",
+      title_es: "Experiencia",
+      title_en: "Experience",
+      active: false,
+    },
+    {
+      id: "projects",
+      title_es: "Proyectos",
+      title_en: "Projects",
+      active: false,
+    },
+    {
+      id: "websites",
+      title_es: "Sitios Web",
+      title_en: "Websites",
+      active: false,
+    },
   ]);
-  
+
   const sectionsRef = useRef({});
 
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.6 // Adjust as needed
+      rootMargin: "0px",
+      threshold: 0.6, // Adjust as needed
     };
 
     const callback = (entries) => {
@@ -63,7 +79,9 @@ const Menu = () => {
         {menuItems.map((item) => (
           <li key={item.id}>
             <a
-              className={`group flex items-center py-3 ${item.active ? "active" : ""}`}
+              className={`group flex items-center py-3 ${
+                item.active ? "active" : ""
+              }`}
               href={`#${item.id}`}
               onClick={() => handleItemClick(item.id)}
             >

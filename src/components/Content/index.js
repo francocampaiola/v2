@@ -1,6 +1,7 @@
 import React from "react";
 import Experience from "../Sections/Experience";
 import Projects from "../Sections/Projects";
+import Websites from "../Sections/Websites";
 import Footer from "../Sections/Footer";
 import LanguageSelector from "../LanguageSelector";
 import About from "../Sections/About";
@@ -12,6 +13,7 @@ const Content = ({}) => {
       <About />
       <Experience />
       <Projects />
+      <Websites />
       <Footer />
     </main>
   );

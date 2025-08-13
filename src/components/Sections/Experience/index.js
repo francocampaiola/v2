@@ -42,6 +42,7 @@ const Experience = () => {
             dateEnd={"May 2025"}
             position={"Ingeniero frontend "}
             company={"Polynomium"}
+            companyUrl={"https://polynomium.com"}
             description={
               "Desarrollé y optimicé Megapix, una plataforma de pagos fintech de alto rendimiento integrada con el sistema PIX de Brasil. Implementé arquitecturas frontend escalables utilizando Next.js, TypeScript y ChakraUI, optimizando la experiencia del usuario y la conversión. Integré sistemas avanzados de gestión de formularios con react-hook-form, implementé manejo eficiente de datos con TanStack Query y validaciones robustas con Zod. Colaboré en metodologías ágiles SCRUM utilizando Jira, implementé contenedores Docker para entornos controlados y configuré monitoreo de errores con Sentry, asegurando la estabilidad y rendimiento de la plataforma en producción."
             }
