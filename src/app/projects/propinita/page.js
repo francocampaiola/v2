@@ -93,7 +93,7 @@ const Propinita = () => {
           {language === "es" ? "Características Principales" : "Key Features"}
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-slate-800 rounded-lg p-6">
+          <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-xl p-6 border border-slate-700/50 hover:border-teal-400/20 transition-all duration-300 hover:shadow-lg">
             <h3 className="text-lg font-semibold text-teal-300 mb-3">
               {language === "es"
                 ? "Integración MercadoPago"
@@ -348,7 +348,7 @@ const Propinita = () => {
             href="https://landing.propinita.app"
             target="_blank"
             rel="noreferrer noopener"
-            className="inline-flex items-center px-6 py-3 bg-teal-500 hover:bg-teal-600 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-teal-500 to-blue-500 hover:from-teal-600 hover:to-blue-600 text-white font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -369,7 +369,7 @@ const Propinita = () => {
             href="https://propinita.app"
             target="_blank"
             rel="noreferrer noopener"
-            className="inline-flex items-center px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-slate-700 to-slate-600 hover:from-slate-600 hover:to-slate-500 text-white font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

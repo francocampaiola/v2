@@ -12,7 +12,7 @@ const ProjectCard = ({
   return (
     <li className="mb-12">
       <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-        <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+        <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:from-slate-800/50 lg:group-hover:to-slate-700/50 lg:group-hover:shadow-xl lg:group-hover:backdrop-blur-sm"></div>
         <div className="z-10 sm:order-2 sm:col-span-6">
           <h3>
             <Link
@@ -49,7 +49,7 @@ const ProjectCard = ({
                 className="inline-flex items-center leading-tight font-medium text-slate-200 text-sm mr-2 mb-2"
               >
                 <span className="mt-2">
-                  <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                  <div className="flex items-center rounded-full bg-gradient-to-r from-teal-400/20 to-blue-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 border border-teal-400/20 hover:border-teal-400/40 transition-all duration-200">
                     {technology}
                   </div>
                 </span>
@@ -58,15 +58,18 @@ const ProjectCard = ({
           </ul>
         </div>
         <div className="sm:order-1 sm:col-span-2 flex justify-center">
-          <img
-            alt={name}
-            loading="lazy"
-            decoding="async"
-            data-nimg="1"
-            className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30
-             w-full h-40 sm:h-48 md:h-56 lg:w-[300px] lg:h-[180px] xl:w-[5000px] xl:h-[100px] object-cover"
-            src={image}
-          />
+          <div className="relative group w-full sm:w-auto max-w-full">
+            <img
+              alt={name}
+              loading="lazy"
+              decoding="async"
+              data-nimg="1"
+              className="rounded-xl border-2 border-slate-200/10 transition-all duration-300 group-hover:border-teal-400/30 group-hover:scale-105
+               w-full h-48 sm:h-48 md:h-56 lg:h-[180px] object-cover shadow-md"
+              src={image}
+            />
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
         </div>
       </div>
     </li>
