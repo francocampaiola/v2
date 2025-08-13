@@ -20,8 +20,26 @@ const Experience = () => {
       {language === "es" ? (
         <>
           <ExperienceCard
-            dateInit={"May 2024"}
+            dateInit={"May 2025"}
             dateEnd={"Presente"}
+            position={"Tech Lead "}
+            companyUrl={"https://grayola.io"}
+            company={"Grayola"}
+            description={
+              "Lidero el desarrollo técnico y estratégico de una plataforma digital B2B basada en un modelo DaaS (Design as a Service). Soy responsable de construir y escalar la arquitectura full-stack con Next.js, Supabase, Stripe y Shadcn UI, desarrollar sistemas de autenticación y gestión de proyectos, integrar sistemas de pago y lógica de suscripciones, y definir flujos UX desde la visión de negocio. Mi rol combina ejecución técnica hands-on con visión estratégica de producto, trabajando en estrecha colaboración con los fundadores para ejecutar el roadmap tecnológico y desarrollar MVPs rápidos e iterativos."
+            }
+            technologies={[
+              "Next.js",
+              "Supabase",
+              "Amazon Web Services (AWS)",
+              "Stripe",
+              "Docker",
+              "Shadcn UI",
+            ]}
+          />
+          <ExperienceCard
+            dateInit={"May 2024"}
+            dateEnd={"May 2025"}
             position={"Ingeniero frontend "}
             company={"Polynomium"}
             description={
@@ -59,8 +77,25 @@ const Experience = () => {
       ) : (
         <>
           <ExperienceCard
-            dateInit={"May 2024"}
+            dateInit={"May 2025"}
             dateEnd={"Present"}
+            position={"Tech Lead & Product Engineer"}
+            company={"Grayola"}
+            description={
+              "I lead the technical and strategic development of a B2B digital platform based on a DaaS (Design as a Service) model. I am responsible for building and scaling the full-stack architecture with Next.js, Supabase, Stripe and Shadcn UI, developing authentication systems and project management, integrating payment systems and subscription logic, and defining UX flows from the business vision. My role combines hands-on technical execution with strategic product vision, working closely with the founders to execute the technology roadmap and develop fast, iterative MVPs."
+            }
+            technologies={[
+              "Next.js",
+              "Supabase",
+              "Amazon Web Services (AWS)",
+              "Stripe",
+              "Docker",
+              "Shadcn UI",
+            ]}
+          />
+          <ExperienceCard
+            dateInit={"May 2024"}
+            dateEnd={"May 2025"}
             position={"Frontend Engineer"}
             company={"Polynomium"}
             description={

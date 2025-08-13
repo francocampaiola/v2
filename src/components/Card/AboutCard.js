@@ -11,13 +11,13 @@ const AboutCard = () => {
       {language === "es" ? (
         <>
           <p className="mb-4">
-            Soy desarrollador frontend con más de 6 años de experiencia.
-            Actualmente, creo interfaces dinámicas y escalables con React.js,
-            Next.js y me encuentro aprendiendo React Native. Me enfoco en
-            soluciones eficientes con código limpio y bien estructurado.
+            Soy desarrollador con más de 6 años de experiencia. Actualmente,
+            creo interfaces dinámicas y escalables con React.js, Next.js y me
+            encuentro aprendiendo React Native. Me enfoco en soluciones
+            eficientes con código limpio y bien estructurado.
           </p>
           <p className="mb-4">
-            Estudié en la{" "}
+            Di mis primeros pasos en la{" "}
             <Link
               className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               href="https://fra.utn.edu.ar/"
@@ -26,7 +26,8 @@ const AboutCard = () => {
             >
               Universidad Tecnológica Nacional
             </Link>{" "}
-            y actualmente finalizo mi Tecnicatura en Diseño y Desarrollo Web en{" "}
+            y recientemente completé mi Tecnicatura en Diseño y Desarrollo Web
+            en{" "}
             <Link
               className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               href="https://davinci.edu.ar/"
@@ -52,7 +53,7 @@ const AboutCard = () => {
             solutions with clean and well-structured code.
           </p>
           <p className="mb-4">
-            I studied at{" "}
+            I took my first steps at{" "}
             <Link
               className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               href="https://fra.utn.edu.ar/"
@@ -61,7 +62,7 @@ const AboutCard = () => {
             >
               Universidad Tecnológica Nacional
             </Link>{" "}
-            and I am finishing my Web Design and Development Degree at{" "}
+            and recently completed my Web Design and Development Degree at{" "}
             <Link
               className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               href="https://davinci.edu.ar/"
