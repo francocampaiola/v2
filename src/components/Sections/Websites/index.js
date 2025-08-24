@@ -49,7 +49,7 @@ const Websites = () => {
                 description={
                   "Corporate website for the Argentine fintech Polynomium. I developed a modern and responsive landing page that effectively communicates the company's value proposition, optimized for conversion and SEO positioning. I implemented user-centered design with intuitive navigation and visual elements that reflect the company's technological innovation."
                 }
-                image={"polynomium.jpg"}
+                image={"polynomium.png"}
                 technologies={["Next.js", "TailwindCSS", "TypeScript", "SEO"]}
                 url={"https://polynomium.com"}
                 targetBlank={true}
@@ -59,7 +59,7 @@ const Websites = () => {
                 description={
                   "Corporate website for Alkimiaz, a company specialized in technological solutions. I created a professional web platform that highlights the company's services and experience, with modern design and interactive features that improve user experience and facilitate contact with potential clients."
                 }
-                image={"alkimiaz.jpg"}
+                image={"alkimiaz.png"}
                 technologies={["Next.js", "TailwindCSS", "JavaScript", "SEO"]}
                 url={"https://alkimiaz.com"}
                 targetBlank={true}

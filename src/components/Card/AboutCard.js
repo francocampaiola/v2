@@ -11,7 +11,7 @@ const AboutCard = () => {
       {language === "es" ? (
         <>
           <p className="mb-4">
-            Soy un desarrollador full-stack senior con más de 6 años de
+            Soy un desarrollador full-stack senior con más de 8 años de
             experiencia en desarrollo web y aplicaciones móviles. Especializado
             en React.js, Next.js y tecnologías modernas, diseño y desarrollo
             soluciones digitales escalables que optimizan la experiencia del
@@ -50,7 +50,7 @@ const AboutCard = () => {
       ) : (
         <>
           <p className="mb-4">
-            I am a senior full-stack developer with over 6 years of experience
+            I am a senior full-stack developer with over 8 years of experience
             in web development and mobile applications. Specialized in React.js,
             Next.js and modern technologies, I design and develop scalable
             digital solutions that optimize user experience and deliver
