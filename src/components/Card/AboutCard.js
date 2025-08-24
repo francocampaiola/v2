@@ -11,13 +11,14 @@ const AboutCard = () => {
       {language === "es" ? (
         <>
           <p className="mb-4">
-            Soy desarrollador frontend con más de 6 años de experiencia.
-            Actualmente, creo interfaces dinámicas y escalables con React.js,
-            Next.js y me encuentro aprendiendo React Native. Me enfoco en
-            soluciones eficientes con código limpio y bien estructurado.
+            Soy un desarrollador full-stack senior con más de 8 años de
+            experiencia en desarrollo web y aplicaciones móviles. Especializado
+            en React.js, Next.js y tecnologías modernas, diseño y desarrollo
+            soluciones digitales escalables que optimizan la experiencia del
+            usuario y generan resultados medibles para empresas.
           </p>
           <p className="mb-4">
-            Estudié en la{" "}
+            Di mis primeros pasos en la{" "}
             <Link
               className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               href="https://fra.utn.edu.ar/"
@@ -26,7 +27,8 @@ const AboutCard = () => {
             >
               Universidad Tecnológica Nacional
             </Link>{" "}
-            y actualmente finalizo mi Tecnicatura en Diseño y Desarrollo Web en{" "}
+            y recientemente completé mi Tecnicatura en Diseño y Desarrollo Web
+            en{" "}
             <Link
               className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               href="https://davinci.edu.ar/"
@@ -38,21 +40,24 @@ const AboutCard = () => {
             , con énfasis en diseño y experiencia de usuario.
           </p>
           <p>
-            Me apasiona la tecnología y el aprendizaje constante, aplicando
-            herramientas como TypeScript, Expo y Docker. Tengo experiencia con
-            SSR y middlewares, optimizando flujos de trabajo con Figma y GitHub.
+            Mi expertise incluye TypeScript, React Native, Docker y
+            arquitecturas cloud. Implemento mejores prácticas de desarrollo con
+            metodologías ágiles, optimización de rendimiento y SEO técnico.
+            Colaboro estrechamente con equipos de diseño y producto para
+            entregar soluciones que superen las expectativas del cliente.
           </p>
         </>
       ) : (
         <>
           <p className="mb-4">
-            I am a frontend developer with over 6 years of experience.
-            Currently, I build dynamic and scalable interfaces with React.js,
-            Next.js, and I am learning React Native. My focus is on efficient
-            solutions with clean and well-structured code.
+            I am a senior full-stack developer with over 8 years of experience
+            in web development and mobile applications. Specialized in React.js,
+            Next.js and modern technologies, I design and develop scalable
+            digital solutions that optimize user experience and deliver
+            measurable results for businesses.
           </p>
           <p className="mb-4">
-            I studied at{" "}
+            I took my first steps at{" "}
             <Link
               className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               href="https://fra.utn.edu.ar/"
@@ -61,7 +66,7 @@ const AboutCard = () => {
             >
               Universidad Tecnológica Nacional
             </Link>{" "}
-            and I am finishing my Web Design and Development Degree at{" "}
+            and recently completed my Web Design and Development Degree at{" "}
             <Link
               className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               href="https://davinci.edu.ar/"
@@ -73,9 +78,11 @@ const AboutCard = () => {
             , focusing on design and user experience.
           </p>
           <p>
-            I am passionate about technology and continuous learning, applying
-            tools like TypeScript, Expo, and Docker. I have experience with SSR
-            and middlewares, optimizing workflows with Figma and GitHub.
+            My expertise includes TypeScript, React Native, Docker and cloud
+            architectures. I implement development best practices with agile
+            methodologies, performance optimization and technical SEO. I
+            collaborate closely with design and product teams to deliver
+            solutions that exceed client expectations.
           </p>
         </>
       )}

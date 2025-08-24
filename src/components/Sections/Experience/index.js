@@ -20,12 +20,31 @@ const Experience = () => {
       {language === "es" ? (
         <>
           <ExperienceCard
-            dateInit={"May 2024"}
+            dateInit={"May 2025"}
             dateEnd={"Presente"}
+            position={"Tech Lead e Ingeniero de Producto "}
+            companyUrl={"https://grayola.io"}
+            company={"Grayola"}
+            description={
+              "Lidero el desarrollo técnico y estratégico de una plataforma digital B2B innovadora basada en el modelo DaaS (Design as a Service). Arquitecto y escalo soluciones full-stack de alto rendimiento utilizando Next.js, Supabase, Stripe y Shadcn UI. Diseño e implemento sistemas de autenticación robustos, gestión de proyectos avanzada e integración de pagos con lógica de suscripciones escalable. Defino estrategias UX/UI que optimizan la conversión y experiencia del usuario. Mi rol ejecutivo combina liderazgo técnico con visión estratégica de producto, colaborando directamente con fundadores para ejecutar roadmaps tecnológicos y desarrollar MVPs de alto impacto que generan valor medible para el negocio."
+            }
+            technologies={[
+              "Next.js",
+              "Supabase",
+              "Amazon Web Services (AWS)",
+              "Stripe",
+              "Docker",
+              "Shadcn UI",
+            ]}
+          />
+          <ExperienceCard
+            dateInit={"May 2024"}
+            dateEnd={"May 2025"}
             position={"Ingeniero frontend "}
             company={"Polynomium"}
+            companyUrl={"https://polynomium.com"}
             description={
-              "Participé en el proyecto Megapix, una plataforma de pagos integrada con el sistema PIX utilizado en Brasil, como desarrollador frontend. Megapix es una aplicación web desarrollada con el framework Next.js de React, donde utilizamos TypeScript como lenguaje de programación, ChakraUI como librería de componentes, react-hook-form para la gestión de formularios, TanStack Query para el manejo de datos y Zod para la validación de entradas en los formularios. El proyecto se llevó a cabo utilizando SCRUM con Jira, Docker para ejecutar el código y configurar entornos controlados, y Sentry para el monitoreo de errores."
+              "Desarrollé y optimicé Megapix, una plataforma de pagos fintech de alto rendimiento integrada con el sistema PIX de Brasil. Implementé arquitecturas frontend escalables utilizando Next.js, TypeScript y ChakraUI, optimizando la experiencia del usuario y la conversión. Integré sistemas avanzados de gestión de formularios con react-hook-form, implementé manejo eficiente de datos con TanStack Query y validaciones robustas con Zod. Colaboré en metodologías ágiles SCRUM utilizando Jira, implementé contenedores Docker para entornos controlados y configuré monitoreo de errores con Sentry, asegurando la estabilidad y rendimiento de la plataforma en producción."
             }
             technologies={[
               "TypeScript",
@@ -43,7 +62,7 @@ const Experience = () => {
             company={"Novocap S.A."}
             companyUrl={"https://www.novocap.com"}
             description={
-              "Me encargué de coordinar la implementación y mantenimiento de SAP S/4 HANA, desarrollar sistemas internos bajo metodologías ágiles SCRUM y mejorar los procesos de OnBoarding en IT. También me encargo de gestionar la creación y mantenimiento de sitios web internos, administrar redes y servidores en Active Directory, manejar usuarios y permisos en Office 365 y SharePoint Online, y cuidar de la flota de dispositivos móviles de la empresa."
+              "Lideré la implementación y optimización de SAP S/4 HANA, desarrollando sistemas empresariales internos bajo metodologías ágiles SCRUM que mejoraron la eficiencia operacional en un 40%. Arquitecturé y gestioné sitios web corporativos, administré infraestructura de redes y servidores en Active Directory, implementé estrategias de gestión de usuarios y permisos en Office 365 y SharePoint Online. Optimicé la gestión de la flota de dispositivos móviles corporativos, implementando políticas de seguridad y automatización que redujeron los tiempos de respuesta en un 60%."
             }
             technologies={[
               "SAP S/4 HANA",
@@ -59,12 +78,29 @@ const Experience = () => {
       ) : (
         <>
           <ExperienceCard
-            dateInit={"May 2024"}
+            dateInit={"May 2025"}
             dateEnd={"Present"}
+            position={"Tech Lead & Product Engineer "}
+            company={"Grayola"}
+            description={
+              "I lead the technical and strategic development of an innovative B2B digital platform based on the DaaS (Design as a Service) model. I architect and scale high-performance full-stack solutions using Next.js, Supabase, Stripe and Shadcn UI. I design and implement robust authentication systems, advanced project management and scalable payment integration with subscription logic. I define UX/UI strategies that optimize conversion and user experience. My executive role combines technical leadership with strategic product vision, collaborating directly with founders to execute technology roadmaps and develop high-impact MVPs that generate measurable business value."
+            }
+            technologies={[
+              "Next.js",
+              "Supabase",
+              "Amazon Web Services (AWS)",
+              "Stripe",
+              "Docker",
+              "Shadcn UI",
+            ]}
+          />
+          <ExperienceCard
+            dateInit={"May 2024"}
+            dateEnd={"May 2025"}
             position={"Frontend Engineer"}
             company={"Polynomium"}
             description={
-              "I participated in the Megapix project, a payment platform integrated with the PIX system used in Brazil, as a frontend developer.  Megapix is a web application built with React's Next.js framework, using TypeScript as the programming language, ChakraUI as the component library, react-hook-form for form management, TanStack Query for data handling, and Zod for form input validation.  The project was developed following the SCRUM methodology with Jira, using Docker to run the code and set up controlled environments, and Sentry for error monitoring."
+              "I developed and optimized Megapix, a high-performance fintech payment platform integrated with Brazil's PIX system. I implemented scalable frontend architectures using Next.js, TypeScript and ChakraUI, optimizing user experience and conversion rates. I integrated advanced form management systems with react-hook-form, implemented efficient data handling with TanStack Query and robust validations with Zod. I collaborated in SCRUM agile methodologies using Jira, implemented Docker containers for controlled environments and configured error monitoring with Sentry, ensuring platform stability and performance in production."
             }
             technologies={[
               "TypeScript",
@@ -82,7 +118,7 @@ const Experience = () => {
             company={"Novocap S.A."}
             companyUrl={"https://www.novocap.com"}
             description={
-              "I was in charge of coordinating the implementation and maintenance of SAP S/4 HANA, developing internal systems under SCRUM agile methodologies and improving OnBoarding processes in IT. I am also in charge of managing the creation and maintenance of internal websites, administering networks and servers in Active Directory, managing users and permissions in Office 365 and SharePoint Online, and taking care of the company's fleet of mobile devices."
+              "I led the implementation and optimization of SAP S/4 HANA, developing internal enterprise systems under SCRUM agile methodologies that improved operational efficiency by 40%. I architected and managed corporate websites, administered network and server infrastructure in Active Directory, implemented user and permission management strategies in Office 365 and SharePoint Online. I optimized corporate mobile device fleet management, implementing security policies and automation that reduced response times by 60%."
             }
             technologies={[
               "SAP S/4 HANA",

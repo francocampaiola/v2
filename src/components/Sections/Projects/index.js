@@ -22,61 +22,104 @@ const Projects = () => {
           {language === "es" ? (
             <>
               <ProjectCard
+                name={"Grayola"}
+                description={
+                  "Plataforma digital B2B innovadora basada en el modelo DaaS (Design as a Service). Desarrollé una solución full-stack escalable con arquitectura de alto rendimiento, sistemas de autenticación robustos, integración de pagos con Stripe y gestión avanzada de proyectos. La plataforma optimiza la experiencia del usuario y genera valor medible para empresas."
+                }
+                image={"grayola.png"}
+                technologies={[
+                  "Next.js",
+                  "Supabase",
+                  "Stripe",
+                  "Shadcn UI",
+                  "AWS",
+                ]}
+                url="/projects/grayola"
+                targetBlank={false}
+              />
+              <ProjectCard
                 name={"Megapix"}
                 description={
-                  "Megapix es una plataforma tecnológica diseñada para facilitar las transacciones financieras entre Argentina y Brasil. Integrada con la tecnología PIX del Banco Central de Brasil, permite a individuos, pymes y grandes empresas argentinas ampliar su alcance comercial, mientras que los usuarios brasileños pueden realizar transacciones inmediatas sin complicaciones ni aplicaciones adicionales."
+                  "Plataforma fintech de pagos de alto rendimiento integrada con el sistema PIX de Brasil. Implementé arquitecturas frontend escalables optimizando la experiencia del usuario y conversión. Desarrollé sistemas avanzados de gestión de formularios, manejo eficiente de datos y validaciones robustas, asegurando estabilidad y rendimiento en producción."
                 }
                 image={"megapix.jpg"}
-                technologies={["Next.js", "ChakraUI", "TypeScript"]}
+                technologies={["Next.js", "ChakraUI", "TypeScript", "Docker"]}
                 url="/projects/megapix"
                 targetBlank={false}
               />
               <ProjectCard
                 name={"Propinita"}
                 description={
-                  "Propinita es una aplicación web para vincular tu billetera virtual y poder recibir propinas de tus clientes."
+                  "Aplicación web fintech para facilitar la recepción de propinas digitales. Desarrollé una solución completa que permite a profesionales y comercios vincular sus billeteras virtuales y recibir pagos de forma segura y eficiente, optimizando la experiencia del usuario final."
                 }
                 image={"propinita.png"}
-                technologies={["Next.js", "ChakraUI", "TypeScript"]}
-                url={"https://landing.propinita.app"}
+                technologies={[
+                  "Next.js",
+                  "ChakraUI",
+                  "TypeScript",
+                  "MercadoPago",
+                ]}
+                url={"/projects/propinita"}
+                targetBlank={false}
               />
               <ProjectCard
                 name={"Portfolio"}
                 description={
-                  "Portfolio es mi portafolio personal, donde puedes ver mis proyectos y contactarme."
+                  "Portfolio personal desarrollado con tecnologías modernas y diseño responsive. Implementé una arquitectura optimizada para SEO, con navegación intuitiva y experiencia de usuario fluida, destacando proyectos y habilidades técnicas de manera profesional."
                 }
-                image={"portfolio.png"}
-                technologies={["Next.js", "TailwindCSS", "JavaScript"]}
+                image={"francocampaiola.png"}
+                technologies={["Next.js", "TailwindCSS", "JavaScript", "SEO"]}
                 url={"https://francocampaiola.com"}
               />
             </>
           ) : (
             <>
               <ProjectCard
+                name={"Grayola"}
+                description={
+                  "Innovative B2B digital platform based on the DaaS (Design as a Service) model. I developed a scalable full-stack solution with high-performance architecture, robust authentication systems, Stripe payment integration and advanced project management. The platform optimizes user experience and generates measurable value for businesses."
+                }
+                image={"grayola.png"}
+                technologies={[
+                  "Next.js",
+                  "Supabase",
+                  "Stripe",
+                  "Shadcn UI",
+                  "AWS",
+                ]}
+                url="/projects/grayola"
+              />
+              <ProjectCard
                 name={"Megapix"}
                 description={
-                  "Megapix is a technological platform designed to facilitate financial transactions between Argentina and Brazil. Integrated with the PIX technology from the Central Bank of Brazil, it allows individuals, SMEs, and large Argentine companies to expand their commercial reach, while Brazilian users can conduct immediate transactions without complications or additional applications."
+                  "High-performance fintech payment platform integrated with Brazil's PIX system. I implemented scalable frontend architectures optimizing user experience and conversion. I developed advanced form management systems, efficient data handling and robust validations, ensuring stability and performance in production."
                 }
                 image={"megapix.jpg"}
-                technologies={["Next.js", "ChakraUI", "TypeScript"]}
+                technologies={["Next.js", "ChakraUI", "TypeScript", "Docker"]}
                 url="/projects/megapix"
               />
               <ProjectCard
                 name={"Propinita"}
                 description={
-                  "Propinita is a web application to link your virtual wallet and be able to receive tips from your clients."
+                  "Fintech web application to facilitate digital tip reception. I developed a complete solution that allows professionals and businesses to link their virtual wallets and receive payments securely and efficiently, optimizing the end user experience."
                 }
                 image={"propinita.png"}
-                technologies={["Next.js", "ChakraUI", "TypeScript"]}
-                url={"https://landing.propinita.app"}
+                technologies={[
+                  "Next.js",
+                  "ChakraUI",
+                  "TypeScript",
+                  "MercadoPago",
+                ]}
+                url={"/projects/propinita"}
+                targetBlank={false}
               />
               <ProjectCard
                 name={"Portfolio"}
                 description={
-                  "Portfolio is my personal portfolio, where you can see my projects and contact me."
+                  "Personal portfolio developed with modern technologies and responsive design. I implemented an SEO-optimized architecture with intuitive navigation and fluid user experience, professionally showcasing projects and technical skills."
                 }
-                image={"portfolio.png"}
-                technologies={["Next.js", "TailwindCSS", "JavaScript"]}
+                image={"francocampaiola.png"}
+                technologies={["Next.js", "TailwindCSS", "JavaScript", "SEO"]}
                 url={"https://francocampaiola.com"}
               />
             </>
