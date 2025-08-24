@@ -26,7 +26,7 @@ const Projects = () => {
                 description={
                   "Plataforma digital B2B innovadora basada en el modelo DaaS (Design as a Service). Desarrollé una solución full-stack escalable con arquitectura de alto rendimiento, sistemas de autenticación robustos, integración de pagos con Stripe y gestión avanzada de proyectos. La plataforma optimiza la experiencia del usuario y genera valor medible para empresas."
                 }
-                image={"grayola.jpg"}
+                image={"grayola.png"}
                 technologies={[
                   "Next.js",
                   "Supabase",
@@ -67,7 +67,7 @@ const Projects = () => {
                 description={
                   "Portfolio personal desarrollado con tecnologías modernas y diseño responsive. Implementé una arquitectura optimizada para SEO, con navegación intuitiva y experiencia de usuario fluida, destacando proyectos y habilidades técnicas de manera profesional."
                 }
-                image={"portfolio.png"}
+                image={"francocampaiola.png"}
                 technologies={["Next.js", "TailwindCSS", "JavaScript", "SEO"]}
                 url={"https://francocampaiola.com"}
               />
@@ -79,7 +79,7 @@ const Projects = () => {
                 description={
                   "Innovative B2B digital platform based on the DaaS (Design as a Service) model. I developed a scalable full-stack solution with high-performance architecture, robust authentication systems, Stripe payment integration and advanced project management. The platform optimizes user experience and generates measurable value for businesses."
                 }
-                image={"grayola.jpg"}
+                image={"grayola.png"}
                 technologies={[
                   "Next.js",
                   "Supabase",
@@ -118,7 +118,7 @@ const Projects = () => {
                 description={
                   "Personal portfolio developed with modern technologies and responsive design. I implemented an SEO-optimized architecture with intuitive navigation and fluid user experience, professionally showcasing projects and technical skills."
                 }
-                image={"portfolio.png"}
+                image={"francocampaiola.png"}
                 technologies={["Next.js", "TailwindCSS", "JavaScript", "SEO"]}
                 url={"https://francocampaiola.com"}
               />

@@ -3,6 +3,11 @@ import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata = {
   title: "Franco Campaiola",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {

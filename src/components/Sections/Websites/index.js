@@ -26,7 +26,7 @@ const Websites = () => {
                 description={
                   "Sitio web corporativo para la fintech argentina Polynomium. Desarrollé una landing page moderna y responsive que comunica efectivamente la propuesta de valor de la empresa, optimizada para conversión y posicionamiento SEO. Implementé diseño centrado en el usuario con navegación intuitiva y elementos visuales que reflejan la innovación tecnológica de la empresa."
                 }
-                image={"polynomium.jpg"}
+                image={"polynomium.png"}
                 technologies={["Next.js", "TailwindCSS", "TypeScript", "SEO"]}
                 url={"https://polynomium.com"}
                 targetBlank={true}
@@ -36,7 +36,7 @@ const Websites = () => {
                 description={
                   "Sitio web corporativo para Alkimiaz, empresa especializada en soluciones tecnológicas. Creé una plataforma web profesional que destaca los servicios y experiencia de la empresa, con diseño moderno y funcionalidades interactivas que mejoran la experiencia del usuario y facilitan el contacto con potenciales clientes."
                 }
-                image={"alkimiaz.jpg"}
+                image={"alkimiaz.png"}
                 technologies={["Next.js", "TailwindCSS", "JavaScript", "SEO"]}
                 url={"https://alkimiaz.com"}
                 targetBlank={true}
