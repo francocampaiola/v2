@@ -28,7 +28,7 @@ const Websites = () => {
                 }
                 image={"polynomium.png"}
                 technologies={["Next.js", "TailwindCSS", "TypeScript", "SEO"]}
-                url={"https://polynomium.com"}
+                url={"https://polynomium-web-gray.vercel.app/"}
                 targetBlank={true}
               />
               <WebsiteCard
@@ -38,7 +38,7 @@ const Websites = () => {
                 }
                 image={"alkimiaz.png"}
                 technologies={["Next.js", "TailwindCSS", "JavaScript", "SEO"]}
-                url={"https://alkimiaz.com"}
+                url={"https://alkimiaz-web.vercel.app/"}
                 targetBlank={true}
               />
             </>
@@ -51,7 +51,7 @@ const Websites = () => {
                 }
                 image={"polynomium.png"}
                 technologies={["Next.js", "TailwindCSS", "TypeScript", "SEO"]}
-                url={"https://polynomium.com"}
+                url={"https://polynomium-web-gray.vercel.app/"}
                 targetBlank={true}
               />
               <WebsiteCard
@@ -61,7 +61,7 @@ const Websites = () => {
                 }
                 image={"alkimiaz.png"}
                 technologies={["Next.js", "TailwindCSS", "JavaScript", "SEO"]}
-                url={"https://alkimiaz.com"}
+                url={"https://alkimiaz-web.vercel.app/"}
                 targetBlank={true}
               />
             </>
