@@ -170,7 +170,7 @@ const Propinita = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-teal-300 mb-2">A+</div>
+              <div className="text-2xl font-bold text-teal-300 mb-2">9/10</div>
               <p className="text-slate-300 text-sm">
                 {language === "es" ? "Calificación final" : "Final grade"}
               </p>
@@ -211,54 +211,51 @@ const Propinita = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-slate-800 rounded-lg p-4">
-            <div className="bg-slate-700 rounded-lg p-8 h-48 flex items-center justify-center">
-              <p className="text-slate-400 text-center">
-                {language === "es"
-                  ? "Captura de pantalla del dashboard"
-                  : "Dashboard screenshot"}
-              </p>
+            <div className="bg-slate-700 rounded-lg w-full h-48 relative overflow-hidden">
+              <Image
+                src="/propinita/propinita_home.png"
+                alt={
+                  language === "es"
+                    ? "Captura de pantalla del dashboard"
+                    : "Dashboard screenshot"
+                }
+                fill
+                className="object-contain"
+              />
             </div>
-            <p className="text-slate-400 text-center mt-2">
-              {language === "es" ? "Landing page" : "Landing page"}
-            </p>
           </div>
           <div className="bg-slate-800 rounded-lg p-4">
-            <div className="bg-slate-700 rounded-lg p-8 h-48 flex items-center justify-center">
-              <p className="text-slate-400 text-center">
-                {language === "es" ? "QR Code" : "QR Code"}
-              </p>
+            <div className="bg-slate-700 rounded-lg w-full h-48 relative overflow-hidden">
+              <Image
+                src="/propinita/propinita_cobrar.png"
+                alt={language === "es" ? "QR Code" : "QR Code"}
+                fill
+                className="object-contain"
+              />
             </div>
-            <p className="text-slate-400 text-center mt-2">
-              {language === "es" ? "Código QR dinámico" : "Dynamic QR code"}
-            </p>
           </div>
           <div className="bg-slate-800 rounded-lg p-4">
-            <div className="bg-slate-700 rounded-lg p-8 h-48 flex items-center justify-center">
-              <p className="text-slate-400 text-center">
-                {language === "es" ? "Onboarding" : "Onboarding"}
-              </p>
+            <div className="bg-slate-700 rounded-lg w-full h-48 relative overflow-hidden">
+              <Image
+                src="/propinita/propinita_new_account.png"
+                alt={language === "es" ? "Onboarding" : "Onboarding"}
+                fill
+                className="object-contain"
+              />
             </div>
-            <p className="text-slate-400 text-center mt-2">
-              {language === "es"
-                ? "Proceso de registro"
-                : "Registration process"}
-            </p>
           </div>
           <div className="bg-slate-800 rounded-lg p-4">
-            <div className="bg-slate-700 rounded-lg p-8 h-48 flex items-center justify-center">
-              <p className="text-slate-400 text-center">
-                {language === "es" ? "MercadoPago" : "MercadoPago"}
-              </p>
+            <div className="bg-slate-700 rounded-lg w-full h-48 relative overflow-hidden">
+              <Image
+                src="/propinita/propinita_login.png"
+                alt={language === "es" ? "MercadoPago" : "MercadoPago"}
+                fill
+                className="object-contain"
+              />
             </div>
-            <p className="text-slate-400 text-center mt-2">
-              {language === "es"
-                ? "Integración de pagos"
-                : "Payment integration"}
-            </p>
           </div>
         </div>
       </div>
-
       <div className="bg-slate-800 rounded-lg p-8">
         <h2 className="text-2xl font-semibold text-slate-200 mb-4">
           {language === "es"

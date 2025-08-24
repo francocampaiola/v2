@@ -78,12 +78,13 @@ const Grayola = () => {
           </p>
         </div>
         <div className="flex justify-center items-center">
-          <div className="bg-slate-800 rounded-lg p-8 w-full h-64 flex items-center justify-center">
-            <p className="text-slate-400 text-center">
-              {language === "es"
-                ? "Imagen del proyecto Grayola"
-                : "Grayola project image"}
-            </p>
+          <div className="bg-slate-800 rounded-lg w-full h-64 relative overflow-hidden">
+            <Image
+              src="/grayola.png"
+              alt={language === "es" ? "Logo de Grayola" : "Grayola logo"}
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </div>
@@ -171,31 +172,51 @@ const Grayola = () => {
           {language === "es" ? "Galería de Imágenes" : "Image Gallery"}
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-slate-800 rounded-lg p-8 h-64 flex items-center justify-center">
-            <p className="text-slate-400 text-center">
-              {language === "es"
-                ? "Captura de pantalla del dashboard"
-                : "Dashboard screenshot"}
-            </p>
+          <div className="bg-slate-800 rounded-lg w-full h-64 relative overflow-hidden">
+            <Image
+              src="/grayola/grayola_home.png"
+              alt={
+                language === "es"
+                  ? "Captura de pantalla del dashboard"
+                  : "Dashboard screenshot"
+              }
+              fill
+              className="object-contain"
+            />
           </div>
-          <div className="bg-slate-800 rounded-lg p-8 h-64 flex items-center justify-center">
-            <p className="text-slate-400 text-center">
-              {language === "es"
-                ? "Vista de gestión de proyectos"
-                : "Project management view"}
-            </p>
+          <div className="bg-slate-800 rounded-lg w-full h-64 relative overflow-hidden">
+            <Image
+              src="/grayola/grayola_briefs.png"
+              alt={
+                language === "es"
+                  ? "Vista de gestión de proyectos"
+                  : "Project management view"
+              }
+              fill
+              className="object-contain"
+            />
           </div>
-          <div className="bg-slate-800 rounded-lg p-8 h-64 flex items-center justify-center">
-            <p className="text-slate-400 text-center">
-              {language === "es"
-                ? "Interfaz de pagos y suscripciones"
-                : "Payments and subscriptions interface"}
-            </p>
+          <div className="bg-slate-800 rounded-lg w-full h-64 relative overflow-hidden">
+            <Image
+              src="/grayola/grayola_brief_web.png"
+              alt={
+                language === "es"
+                  ? "Interfaz de pagos y suscripciones"
+                  : "Payments and subscriptions interface"
+              }
+              fill
+              className="object-contain"
+            />
           </div>
-          <div className="bg-slate-800 rounded-lg p-8 h-64 flex items-center justify-center">
-            <p className="text-slate-400 text-center">
-              {language === "es" ? "Panel de administración" : "Admin panel"}
-            </p>
+          <div className="bg-slate-800 rounded-lg w-full h-64 relative overflow-hidden">
+            <Image
+              src="/grayola/grayola_catalog.png"
+              alt={
+                language === "es" ? "Panel de administración" : "Admin panel"
+              }
+              fill
+              className="object-contain"
+            />
           </div>
         </div>
       </div>
