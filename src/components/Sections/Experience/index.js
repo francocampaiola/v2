@@ -132,6 +132,7 @@ const Experience = () => {
             dateEnd={"May 2025"}
             position={"Full Stack Developer "}
             company={"Alkimiaz"}
+            companyUrl={"https://alkimiaz.com"}
             description={
               "I developed and optimized Megapix, a high-performance fintech payment platform integrated with Brazil's PIX system. I implemented scalable frontend architectures using Next.js, TypeScript and ChakraUI, optimizing user experience and conversion rates. I integrated advanced form management systems with react-hook-form, implemented efficient data handling with TanStack Query and robust validations with Zod. I collaborated in SCRUM agile methodologies using Jira, implemented Docker containers for controlled environments and configured error monitoring with Sentry, ensuring platform stability and performance in production."
             }
