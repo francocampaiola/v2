@@ -19,9 +19,26 @@ const Experience = () => {
       </div>
       {language === "es" ? (
         <>
+        <ExperienceCard
+            dateInit={"Oct 2025"}
+            dateEnd={"Presente"}
+            position={"Full Stack Developer "}
+            companyUrl={"https://notchatbot.com"}
+            company={"NotChatBot"}
+            description={
+              "Formo parte del equipo de desarrollo de una plataforma que utiliza inteligencia artificial para automatizar la comunicación entre empresas y usuarios. Participo en la creación de nuevas funcionalidades, mantenimiento y optimización del sistema. Colaboro con el equipo en la implementación de mejoras, resolución de incidencias y revisión del flujo general del producto. Esta experiencia me permite seguir creciendo como desarrollador, aportando en un entorno colaborativo y en proyectos que integran inteligencia artificial con soluciones enfocadas en la experiencia del usuario."
+            }
+            technologies={[
+              "Next.js",
+              "Convex",
+              "Vercel",
+              "TypeScript",
+              "Shadcn UI",
+            ]}
+          />
           <ExperienceCard
             dateInit={"May 2025"}
-            dateEnd={"Presente"}
+            dateEnd={"Oct 2025"}
             position={"Tech Lead e Ingeniero de Producto "}
             companyUrl={"https://grayola.io"}
             company={"Grayola"}
@@ -77,9 +94,25 @@ const Experience = () => {
         </>
       ) : (
         <>
+        <ExperienceCard
+            dateInit={"Oct 2025"}
+            dateEnd={"Present"}
+            position={"Full Stack Developer "}
+            company={"NotChatBot"}
+            description={
+              "I’m part of the development team of a platform that leverages artificial intelligence to automate communication between companies and users. I contribute to building new features, maintaining and optimizing the system, and collaborating with the team on improvements, issue resolution, and reviewing the overall product flow. This experience allows me to continue growing as a developer, contributing in a collaborative environment and working on projects that integrate AI with user-focused solutions."
+            }
+            technologies={[
+              "Next.js",
+              "Convex",
+              "Vercel",
+              "TypeScript",
+              "Shadcn UI",
+            ]}
+          />
           <ExperienceCard
             dateInit={"May 2025"}
-            dateEnd={"Present"}
+            dateEnd={"Oct 2025"}
             position={"Tech Lead & Product Engineer "}
             company={"Grayola"}
             description={
