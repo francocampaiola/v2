@@ -115,6 +115,7 @@ const Experience = () => {
             dateInit={"May 2025"}
             dateEnd={"Oct 2025"}
             position={"Tech Lead & Product Engineer "}
+            companyUrl={"https://grayola.io"}
             company={"Grayola"}
             description={
               "I lead the technical and strategic development of an innovative B2B digital platform based on the DaaS (Design as a Service) model. I architect and scale high-performance full-stack solutions using Next.js, Supabase, Stripe and Shadcn UI. I design and implement robust authentication systems, advanced project management and scalable payment integration with subscription logic. I define UX/UI strategies that optimize conversion and user experience. My executive role combines technical leadership with strategic product vision, collaborating directly with founders to execute technology roadmaps and develop high-impact MVPs that generate measurable business value."
