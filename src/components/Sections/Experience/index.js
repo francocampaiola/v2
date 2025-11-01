@@ -99,6 +99,7 @@ const Experience = () => {
             dateEnd={"Present"}
             position={"Full Stack Developer "}
             company={"NotChatBot"}
+            companyUrl={"https://notchatbot.com"}
             description={
               "I’m part of the development team of a platform that leverages artificial intelligence to automate communication between companies and users. I contribute to building new features, maintaining and optimizing the system, and collaborating with the team on improvements, issue resolution, and reviewing the overall product flow. This experience allows me to continue growing as a developer, contributing in a collaborative environment and working on projects that integrate AI with user-focused solutions."
             }
