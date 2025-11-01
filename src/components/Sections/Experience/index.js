@@ -57,9 +57,9 @@ const Experience = () => {
           <ExperienceCard
             dateInit={"May 2024"}
             dateEnd={"May 2025"}
-            position={"Ingeniero frontend "}
-            company={"Polynomium"}
-            companyUrl={"https://polynomium.com"}
+            position={"Full Stack Developer "}
+            company={"Alkimiaz"}
+            companyUrl={"https://alkimiaz.com"}
             description={
               "Desarrollé y optimicé Megapix, una plataforma de pagos fintech de alto rendimiento integrada con el sistema PIX de Brasil. Implementé arquitecturas frontend escalables utilizando Next.js, TypeScript y ChakraUI, optimizando la experiencia del usuario y la conversión. Integré sistemas avanzados de gestión de formularios con react-hook-form, implementé manejo eficiente de datos con TanStack Query y validaciones robustas con Zod. Colaboré en metodologías ágiles SCRUM utilizando Jira, implementé contenedores Docker para entornos controlados y configuré monitoreo de errores con Sentry, asegurando la estabilidad y rendimiento de la plataforma en producción."
             }
@@ -130,8 +130,8 @@ const Experience = () => {
           <ExperienceCard
             dateInit={"May 2024"}
             dateEnd={"May 2025"}
-            position={"Frontend Engineer"}
-            company={"Polynomium"}
+            position={"Full Stack Developer "}
+            company={"Alkimiaz"}
             description={
               "I developed and optimized Megapix, a high-performance fintech payment platform integrated with Brazil's PIX system. I implemented scalable frontend architectures using Next.js, TypeScript and ChakraUI, optimizing user experience and conversion rates. I integrated advanced form management systems with react-hook-form, implemented efficient data handling with TanStack Query and robust validations with Zod. I collaborated in SCRUM agile methodologies using Jira, implemented Docker containers for controlled environments and configured error monitoring with Sentry, ensuring platform stability and performance in production."
             }
