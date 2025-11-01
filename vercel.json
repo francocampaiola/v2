@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "src/app/**/*.js": {
-      "node": "22.x"
-    }
-  },
   "redirects": [
     {
       "source": "/cel",
