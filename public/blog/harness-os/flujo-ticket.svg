@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Inter, ui-sans-serif, system-ui, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">Recorrido de un ticket en harness-os</title>
+  <desc id="d">Un ticket pasa de Ready en Notion al planner, que escribe la spec; con la spec aprobada, el implementer escribe el código, el quality gate corre los chequeos del repo y el reviewer revisa el diff. Si hay problemas vuelve al implementer, hasta tres veces. Al final se abre el Pull Request y el ticket queda en Review.</desc>
+  <rect width="1200" height="520" rx="28" fill="#0e1012"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" fill="#8a8a84"/></marker>
+    <marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" fill="#ff6fb5"/></marker>
+  </defs>
+  <text x="48" y="64" fill="#f7f7f5" font-size="26" font-weight="600">De un ticket de Notion a un Pull Request</text>
+  <text x="48" y="94" fill="#aeaea8" font-size="16">Dos runs por ticket, separados por la spec aprobada. El merge siempre lo hace una persona.</text>
+
+  <!-- Run A -->
+  <rect x="40" y="130" width="400" height="300" rx="20" fill="#16181a"/>
+  <text x="64" y="162" fill="#8a8a84" font-size="13" font-weight="600" letter-spacing="1.5">RUN A · PLAN</text>
+  <g>
+    <rect x="64" y="186" width="160" height="72" rx="14" fill="#1c1f21"/>
+    <text x="84" y="216" fill="#f7f7f5" font-size="17" font-weight="600">Notion</text>
+    <text x="84" y="240" fill="#aeaea8" font-size="14">Ticket en Ready</text>
+  </g>
+  <line x1="224" y1="222" x2="262" y2="222" stroke="#8a8a84" stroke-width="2" marker-end="url(#a)"/>
+  <g>
+    <rect x="264" y="186" width="152" height="72" rx="14" fill="#1c1f21"/>
+    <text x="284" y="216" fill="#f7f7f5" font-size="17" font-weight="600">Planner</text>
+    <text x="284" y="240" fill="#aeaea8" font-size="14">Escribe la spec</text>
+  </g>
+  <line x1="340" y1="258" x2="340" y2="306" stroke="#8a8a84" stroke-width="2" marker-end="url(#a)"/>
+  <g>
+    <rect x="64" y="308" width="352" height="96" rx="14" fill="#1c1f21"/>
+    <text x="84" y="340" fill="#f7f7f5" font-size="17" font-weight="600">Spec validada por código</text>
+    <text x="84" y="364" fill="#aeaea8" font-size="14">Objetivo, alcance, criterios con ID</text>
+    <text x="84" y="386" fill="#aeaea8" font-size="14">y plan de tests. Sin preguntas abiertas.</text>
+  </g>
+
+  <!-- puente -->
+  <line x1="440" y1="356" x2="488" y2="356" stroke="#ff6fb5" stroke-width="2" marker-end="url(#p)"/>
+  <rect x="420" y="374" width="88" height="28" rx="14" fill="#26292b"/>
+  <text x="464" y="393" fill="#ff87c2" font-size="13" font-weight="600" text-anchor="middle">Aprobada</text>
+
+  <!-- Run B -->
+  <rect x="492" y="130" width="668" height="300" rx="20" fill="#16181a"/>
+  <text x="516" y="162" fill="#8a8a84" font-size="13" font-weight="600" letter-spacing="1.5">RUN B · IMPLEMENTACIÓN</text>
+  <g>
+    <rect x="516" y="308" width="150" height="96" rx="14" fill="#1c1f21"/>
+    <text x="536" y="342" fill="#f7f7f5" font-size="17" font-weight="600">Implementer</text>
+    <text x="536" y="366" fill="#aeaea8" font-size="14">Escribe el código</text>
+    <text x="536" y="388" fill="#aeaea8" font-size="14">y los tests</text>
+  </g>
+  <line x1="666" y1="356" x2="700" y2="356" stroke="#8a8a84" stroke-width="2" marker-end="url(#a)"/>
+  <g>
+    <rect x="702" y="308" width="150" height="96" rx="14" fill="#1c1f21"/>
+    <text x="722" y="342" fill="#f7f7f5" font-size="17" font-weight="600">Quality gate</text>
+    <text x="722" y="366" fill="#aeaea8" font-size="14">lint, tipos, tests</text>
+    <text x="722" y="388" fill="#aeaea8" font-size="14">y build del repo</text>
+  </g>
+  <line x1="852" y1="356" x2="886" y2="356" stroke="#8a8a84" stroke-width="2" marker-end="url(#a)"/>
+  <g>
+    <rect x="888" y="308" width="140" height="96" rx="14" fill="#1c1f21"/>
+    <text x="908" y="342" fill="#f7f7f5" font-size="17" font-weight="600">Reviewer</text>
+    <text x="908" y="366" fill="#aeaea8" font-size="14">Otro modelo</text>
+    <text x="908" y="388" fill="#aeaea8" font-size="14">revisa el diff</text>
+  </g>
+  <line x1="1028" y1="356" x2="1058" y2="356" stroke="#ff6fb5" stroke-width="2" marker-end="url(#p)"/>
+  <g>
+    <rect x="1060" y="308" width="80" height="96" rx="14" fill="#ff6fb5"/>
+    <text x="1100" y="350" fill="#0e1012" font-size="17" font-weight="700" text-anchor="middle">PR</text>
+    <text x="1100" y="374" fill="#0e1012" font-size="13" text-anchor="middle">Review</text>
+  </g>
+  <!-- loop de fix -->
+  <path d="M958 308 C958 230 591 230 591 300" fill="none" stroke="#d99a3a" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#a)"/>
+  <rect x="660" y="200" width="270" height="34" rx="17" fill="#26292b"/>
+  <text x="795" y="222" fill="#e3aa55" font-size="14" font-weight="600" text-anchor="middle">¿Hallazgos o gate en rojo? Fix, hasta 3 veces</text>
+
+  <text x="48" y="474" fill="#8a8a84" font-size="14">Si en cualquier paso hace falta una persona, el run termina y el ticket queda en Blocked con un motivo accionable.</text>
+</svg>

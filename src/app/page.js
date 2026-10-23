@@ -1,14 +1,15 @@
-import React from "react";
-import Content from "@/components/Content";
-import Sidebar from "@/components/Sections/Sidebar";
+import { BlogTeaser, Experience, Hero, Milestones, Projects, Skills } from "@/components/home/sections";
 
-const Page = () => {
+// La home: quién soy, los milestones animados, proyectos, experiencia, skills y el blog.
+export default function Page() {
   return (
     <>
-      <Sidebar />
-      <Content />
+      <Hero />
+      <Milestones />
+      <Projects />
+      <Experience />
+      <Skills />
+      <BlogTeaser />
     </>
   );
-};
-
-export default Page;
+}

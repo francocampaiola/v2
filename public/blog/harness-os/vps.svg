@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="Inter, ui-sans-serif, system-ui, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">Qué corre en la VPS</title>
+  <desc id="d">En la VPS corre el orchestrator de harness-os con su base SQLite, los mirrors de git y el panel web. Los agentes corren en containers efímeros, sin credenciales de GitHub ni de Notion. Al lado corren un runner de CI efímero y dos servicios con timers: el que dispara agentes en la nube y el que sincroniza los videos del estudio con Google Drive.</desc>
+  <rect width="1200" height="600" rx="28" fill="#0e1012"/>
+  <text x="48" y="64" fill="#f7f7f5" font-size="26" font-weight="600">Una VPS, varios servicios, ningún secreto en el sandbox</text>
+  <text x="48" y="94" fill="#aeaea8" font-size="16">Todo con systemd y Docker rootless. Lo único expuesto a internet es el webhook de Notion.</text>
+
+  <rect x="40" y="124" width="1120" height="436" rx="22" fill="none" stroke="#3a3d40" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="64" y="154" fill="#8a8a84" font-size="13" font-weight="600" letter-spacing="1.5">VPS · UBUNTU</text>
+
+  <!-- orchestrator -->
+  <rect x="64" y="172" width="520" height="364" rx="20" fill="#16181a"/>
+  <text x="88" y="208" fill="#f7f7f5" font-size="19" font-weight="600">Orchestrator de harness-os</text>
+  <text x="88" y="232" fill="#aeaea8" font-size="14">Bun + TypeScript, determinístico. El único que usa los tokens.</text>
+  <g font-size="14">
+    <rect x="88" y="252" width="228" height="56" rx="12" fill="#1c1f21"/><text x="104" y="276" fill="#f7f7f5" font-weight="600">SQLite</text><text x="104" y="296" fill="#aeaea8">estado de cada run</text>
+    <rect x="332" y="252" width="228" height="56" rx="12" fill="#1c1f21"/><text x="348" y="276" fill="#f7f7f5" font-weight="600">Mirrors de git</text><text x="348" y="296" fill="#aeaea8">un clone limpio por run</text>
+    <rect x="88" y="320" width="228" height="56" rx="12" fill="#1c1f21"/><text x="104" y="344" fill="#f7f7f5" font-weight="600">Quality gate</text><text x="104" y="364" fill="#aeaea8">el check del repo + reglas</text>
+    <rect x="332" y="320" width="228" height="56" rx="12" fill="#1c1f21"/><text x="348" y="344" fill="#f7f7f5" font-weight="600">Panel web</text><text x="348" y="364" fill="#aeaea8">solo lectura, por la VPN</text>
+  </g>
+  <!-- sandbox -->
+  <rect x="88" y="396" width="472" height="120" rx="14" fill="#0b0d0e" stroke="#ff6fb5" stroke-opacity="0.5"/>
+  <text x="108" y="424" fill="#ff87c2" font-size="13" font-weight="600" letter-spacing="1.5">CONTAINER EFÍMERO POR AGENTE</text>
+  <g font-size="13">
+    <rect x="108" y="440" width="96" height="30" rx="15" fill="#26292b"/><text x="156" y="460" fill="#f7f7f5" text-anchor="middle">Planner</text>
+    <rect x="212" y="440" width="116" height="30" rx="15" fill="#26292b"/><text x="270" y="460" fill="#f7f7f5" text-anchor="middle">Implementer</text>
+    <rect x="336" y="440" width="96" height="30" rx="15" fill="#26292b"/><text x="384" y="460" fill="#f7f7f5" text-anchor="middle">Reviewer</text>
+  </g>
+  <text x="108" y="490" fill="#aeaea8" font-size="13">Sin root ni capabilities, con límites de CPU y RAM.</text>
+  <text x="108" y="508" fill="#aeaea8" font-size="13">Adentro solo está la credencial del modelo.</text>
+
+  <!-- side services -->
+  <g>
+    <rect x="608" y="172" width="528" height="108" rx="20" fill="#16181a"/>
+    <text x="632" y="208" fill="#f7f7f5" font-size="18" font-weight="600">Runner de CI efímero</text>
+    <text x="632" y="234" fill="#aeaea8" font-size="14">Toma un job de GitHub Actions, lo corre en un container y se borra.</text>
+    <text x="632" y="258" fill="#aeaea8" font-size="14">Usuario propio, sin acceso a las credenciales del harness.</text>
+  </g>
+  <g>
+    <rect x="608" y="296" width="528" height="108" rx="20" fill="#16181a"/>
+    <text x="632" y="332" fill="#f7f7f5" font-size="18" font-weight="600">cloud-poller</text>
+    <text x="632" y="358" fill="#aeaea8" font-size="14">Cada 5 minutos mira Notion y, si hay tickets listos,</text>
+    <text x="632" y="382" fill="#aeaea8" font-size="14">dispara agentes de Claude Code en la nube.</text>
+  </g>
+  <g>
+    <rect x="608" y="420" width="528" height="116" rx="20" fill="#16181a"/>
+    <text x="632" y="456" fill="#f7f7f5" font-size="18" font-weight="600">studio-sync</text>
+    <text x="632" y="482" fill="#aeaea8" font-size="14">Dispara el estudio de videos, baja los previews que genera</text>
+    <text x="632" y="506" fill="#aeaea8" font-size="14">y los sube a Google Drive. Avisa en Discord.</text>
+  </g>
+</svg>

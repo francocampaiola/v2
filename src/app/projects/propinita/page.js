@@ -12,7 +12,7 @@ const Propinita = () => {
         <div className="flex justify-between items-center mb-4">
           <Link
             href="/"
-            className="inline-flex items-center text-teal-300 hover:text-teal-200"
+            className="inline-flex items-center text-[var(--accent)] hover:text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ const Propinita = () => {
               onClick={() => setLanguage("es")}
               className={`px-3 py-1 rounded text-sm font-medium ${
                 language === "es"
-                  ? "bg-teal-400/10 text-teal-300"
+                  ? "bg-[#8ff0c81a] text-[var(--accent)]"
                   : "text-slate-400 hover:text-slate-300"
               }`}
             >
@@ -43,7 +43,7 @@ const Propinita = () => {
               onClick={() => setLanguage("en")}
               className={`px-3 py-1 rounded text-sm font-medium ${
                 language === "en"
-                  ? "bg-teal-400/10 text-teal-300"
+                  ? "bg-[#8ff0c81a] text-[var(--accent)]"
                   : "text-slate-400 hover:text-slate-300"
               }`}
             >
@@ -94,7 +94,7 @@ const Propinita = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-xl p-6 border border-slate-700/50 hover:border-teal-400/20 transition-all duration-300 hover:shadow-lg">
-            <h3 className="text-lg font-semibold text-teal-300 mb-3">
+            <h3 className="text-lg font-semibold text-[var(--accent)] mb-3">
               {language === "es"
                 ? "Integración MercadoPago"
                 : "MercadoPago Integration"}
@@ -106,7 +106,7 @@ const Propinita = () => {
             </p>
           </div>
           <div className="bg-slate-800 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-teal-300 mb-3">
+            <h3 className="text-lg font-semibold text-[var(--accent)] mb-3">
               {language === "es" ? "QR Dinámico" : "Dynamic QR"}
             </h3>
             <p className="text-slate-300">
@@ -116,7 +116,7 @@ const Propinita = () => {
             </p>
           </div>
           <div className="bg-slate-800 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-teal-300 mb-3">
+            <h3 className="text-lg font-semibold text-[var(--accent)] mb-3">
               {language === "es"
                 ? "Onboarding Intuitivo"
                 : "Intuitive Onboarding"}
@@ -128,7 +128,7 @@ const Propinita = () => {
             </p>
           </div>
           <div className="bg-slate-800 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-teal-300 mb-3">
+            <h3 className="text-lg font-semibold text-[var(--accent)] mb-3">
               {language === "es" ? "Filosofía Win-Win" : "Win-Win Philosophy"}
             </h3>
             <p className="text-slate-300">
@@ -149,12 +149,12 @@ const Propinita = () => {
         <div className="bg-slate-800 rounded-lg p-6">
           <p className="text-slate-300 mb-4">
             {language === "es"
-              ? "Este proyecto fue desarrollado como tesis de grado, aplicando metodologías ágiles y mejores prácticas de desarrollo web moderno. El proceso incluyó investigación de mercado, diseño de UX/UI con la fuente Saira SemiCondensed, desarrollo iterativo y pruebas exhaustivas. El lanzamiento se realizará en la 23ª edición de la Feria Hotelga en agosto de 2025."
-              : "This project was developed as a graduation thesis, applying agile methodologies and modern web development best practices. The process included market research, UX/UI design with Saira SemiCondensed font, iterative development and exhaustive testing. The launch will take place at the 23rd edition of Hotelga Fair in August 2025."}
+              ? "Este proyecto fue desarrollado como tesis de grado, aplicando metodologías ágiles y mejores prácticas de desarrollo web moderno. El proceso incluyó investigación de mercado, diseño de UX/UI con la fuente Saira SemiCondensed, desarrollo iterativo y pruebas exhaustivas. La propuesta comercial planteaba presentarla en la Feria Hotelga, que reúne a la hotelería y la gastronomía."
+              : "This project was developed as a graduation thesis, applying agile methodologies and modern web development best practices. The process included market research, UX/UI design with Saira SemiCondensed font, iterative development and exhaustive testing. The go-to-market plan proposed presenting it at the Hotelga fair, which gathers the hospitality and food industry."}
           </p>
           <div className="grid md:grid-cols-3 gap-4 mt-6">
             <div className="text-center">
-              <div className="text-2xl font-bold text-teal-300 mb-2">6</div>
+              <div className="text-2xl font-bold text-[var(--accent)] mb-2">6</div>
               <p className="text-slate-300 text-sm">
                 {language === "es"
                   ? "Meses de desarrollo"
@@ -162,15 +162,15 @@ const Propinita = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-teal-300 mb-2">
-                Hotelga
+              <div className="text-2xl font-bold text-[var(--accent)] mb-2">
+                {language === "es" ? "Tesis" : "Thesis"}
               </div>
               <p className="text-slate-300 text-sm">
-                {language === "es" ? "Lanzamiento 2025" : "Launch 2025"}
+                {language === "es" ? "Proyecto final de carrera" : "Final degree project"}
               </p>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-teal-300 mb-2">9/10</div>
+              <div className="text-2xl font-bold text-[var(--accent)] mb-2">9/10</div>
               <p className="text-slate-300 text-sm">
                 {language === "es" ? "Calificación final" : "Final grade"}
               </p>
@@ -197,7 +197,7 @@ const Propinita = () => {
           ].map((tech) => (
             <span
               key={tech}
-              className="bg-teal-400/10 text-teal-300 px-3 py-1 rounded-full text-sm font-medium"
+              className="bg-[#8ff0c81a] text-[var(--accent)] px-3 py-1 rounded-full text-sm font-medium"
             >
               {tech}
             </span>
@@ -264,7 +264,7 @@ const Propinita = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <h3 className="text-lg font-semibold text-teal-300 mb-3">
+            <h3 className="text-lg font-semibold text-[var(--accent)] mb-3">
               {language === "es" ? "Logros Técnicos" : "Technical Achievements"}
             </h3>
             <ul className="text-slate-300 space-y-2">
@@ -295,7 +295,7 @@ const Propinita = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-teal-300 mb-3">
+            <h3 className="text-lg font-semibold text-[var(--accent)] mb-3">
               {language === "es" ? "Impacto del Proyecto" : "Project Impact"}
             </h3>
             <ul className="text-slate-300 space-y-2">

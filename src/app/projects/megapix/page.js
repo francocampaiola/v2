@@ -12,7 +12,7 @@ const Megapix = () => {
         <div className="flex justify-between items-center mb-4">
           <Link
             href="/"
-            className="inline-flex items-center text-teal-300 hover:text-teal-200"
+            className="inline-flex items-center text-[var(--accent)] hover:text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ const Megapix = () => {
               onClick={() => setLanguage("es")}
               className={`px-3 py-1 rounded text-sm font-medium ${
                 language === "es"
-                  ? "bg-teal-400/10 text-teal-300"
+                  ? "bg-[#8ff0c81a] text-[var(--accent)]"
                   : "text-slate-400 hover:text-slate-300"
               }`}
             >
@@ -43,7 +43,7 @@ const Megapix = () => {
               onClick={() => setLanguage("en")}
               className={`px-3 py-1 rounded text-sm font-medium ${
                 language === "en"
-                  ? "bg-teal-400/10 text-teal-300"
+                  ? "bg-[#8ff0c81a] text-[var(--accent)]"
                   : "text-slate-400 hover:text-slate-300"
               }`}
             >
@@ -94,7 +94,7 @@ const Megapix = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-slate-800 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-teal-300 mb-3">
+            <h3 className="text-lg font-semibold text-[var(--accent)] mb-3">
               {language === "es" ? "Integración PIX" : "PIX Integration"}
             </h3>
             <p className="text-slate-300">
@@ -104,7 +104,7 @@ const Megapix = () => {
             </p>
           </div>
           <div className="bg-slate-800 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-teal-300 mb-3">
+            <h3 className="text-lg font-semibold text-[var(--accent)] mb-3">
               {language === "es"
                 ? "Conversión de Divisas"
                 : "Currency Conversion"}
@@ -116,7 +116,7 @@ const Megapix = () => {
             </p>
           </div>
           <div className="bg-slate-800 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-teal-300 mb-3">
+            <h3 className="text-lg font-semibold text-[var(--accent)] mb-3">
               {language === "es"
                 ? "Arquitectura Frontend"
                 : "Frontend Architecture"}
@@ -128,7 +128,7 @@ const Megapix = () => {
             </p>
           </div>
           <div className="bg-slate-800 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-teal-300 mb-3">
+            <h3 className="text-lg font-semibold text-[var(--accent)] mb-3">
               {language === "es" ? "Gestión de Datos" : "Data Management"}
             </h3>
             <p className="text-slate-300">
@@ -158,7 +158,7 @@ const Megapix = () => {
           ].map((tech) => (
             <span
               key={tech}
-              className="bg-teal-400/10 text-teal-300 px-3 py-1 rounded-full text-sm font-medium"
+              className="bg-[#8ff0c81a] text-[var(--accent)] px-3 py-1 rounded-full text-sm font-medium"
             >
               {tech}
             </span>
@@ -232,13 +232,13 @@ const Megapix = () => {
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="text-center">
-            <div className="text-3xl font-bold text-teal-300 mb-2">99.9%</div>
+            <div className="text-3xl font-bold text-[var(--accent)] mb-2">99.9%</div>
             <p className="text-slate-300">
               {language === "es" ? "Uptime en producción" : "Production uptime"}
             </p>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-teal-300 mb-2">2.5x</div>
+            <div className="text-3xl font-bold text-[var(--accent)] mb-2">2.5x</div>
             <p className="text-slate-300">
               {language === "es"
                 ? "Mejora en rendimiento"
@@ -246,7 +246,7 @@ const Megapix = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-teal-300 mb-2">100%</div>
+            <div className="text-3xl font-bold text-[var(--accent)] mb-2">100%</div>
             <p className="text-slate-300">
               {language === "es" ? "Cobertura de pruebas" : "Test coverage"}
             </p>
