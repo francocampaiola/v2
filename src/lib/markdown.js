@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Figure from "@/components/figures/Figure";
 
-// Un Markdown mínimo para las notas del blog: títulos (## y ###), párrafos, listas, citas, imágenes en su
-// propia línea y, dentro del texto, **negrita**, *cursiva*, `código` y [links](url). Alcanza para las notas
-// y evita sumar una dependencia.
+// Un Markdown mínimo para las notas del blog: títulos (## y ###), párrafos, listas, citas, imágenes y
+// figuras interactivas (`::figure`) en su propia línea y, dentro del texto, **negrita**, *cursiva*,
+// `código` y [links](url). Alcanza para las notas y evita sumar una dependencia.
 
 const INLINE = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`|\[[^\]]+\]\([^)]+\))/g;
 
@@ -33,6 +34,15 @@ export function renderMarkdown(source) {
     const lines = block.split("\n");
     if (block.startsWith("### ")) return <h3 key={key}>{inline(block.slice(4), key)}</h3>;
     if (block.startsWith("## ")) return <h2 key={key}>{inline(block.slice(3), key)}</h2>;
+    // `::figure <nombre> | <título>`: una figura interactiva de public/figures.
+    const figure = block.match(/^::figure ([a-z0-9-]+) \| (.+)$/);
+    if (figure) {
+      return (
+        <figure key={key} className="-mx-2 sm:mx-0">
+          <Figure name={figure[1]} title={figure[2]} />
+        </figure>
+      );
+    }
     const image = block.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
     if (image) {
       const [, alt, src] = image;

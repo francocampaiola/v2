@@ -21,7 +21,7 @@ salvo para decidir qué se hace y para aprobar el resultado.
 
 ## Cómo viaja un ticket
 
-![Recorrido de un ticket: Notion, planner, spec, implementer, quality gate, reviewer y Pull Request](/blog/harness-os/flujo-ticket.svg)
+::figure harness-os | harness-os como un banco con una cinta: sello, prensa, comparador y lupa
 
 Cada ticket pasa por **dos runs**, separados por la spec:
 

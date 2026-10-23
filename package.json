@@ -9,7 +9,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "figures": "node figures/harness-os/build.mjs"
   },
   "dependencies": {
     "critters": "^0.0.23",
