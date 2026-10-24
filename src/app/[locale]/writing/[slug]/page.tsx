@@ -59,7 +59,7 @@ export default async function PostPage({ params }: { params: Params }) {
 
       <div className="mt-16 rounded-2xl border border-border bg-surface p-6 text-sm">
         <p className="font-medium">{profile.name}</p>
-        <p className="mt-1 text-muted">{profile.tagline[locale]}</p>
+        <p className="mt-1 text-muted">{profile.role[locale]} · {profile.location}</p>
         <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
           <a href={`mailto:${profile.email}`} className="hover:text-accent">
             {profile.email}

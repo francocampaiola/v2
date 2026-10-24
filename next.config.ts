@@ -11,12 +11,9 @@ const nextConfig: NextConfig = {
     return [
       { source: "/", destination: "/es", permanent: false },
       // Rutas de la versión anterior
-      {
-        source: "/projects/:slug",
-        destination: "/es/projects/:slug",
-        permanent: true,
-      },
-      { source: "/projects", destination: "/es#work", permanent: true },
+      { source: "/projects/facha", destination: "/es/projects/facha", permanent: true },
+      { source: "/projects/:slug", destination: "/es#proyectos", permanent: true },
+      { source: "/projects", destination: "/es#proyectos", permanent: true },
     ];
   },
 };

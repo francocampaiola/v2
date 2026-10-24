@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getPosts("es").filter((p) => !p.draft);
   const paths = [
     "",
-    ...projects.map((p) => `/projects/${p.slug}`),
+    ...projects.filter((p) => p.slug).map((p) => `/projects/${p.slug}`),
     ...(posts.length > 0 ? ["/writing", ...posts.map((p) => `/writing/${p.slug}`)] : []),
   ];
   return paths.flatMap((path) =>

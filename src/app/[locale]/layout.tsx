@@ -1,12 +1,21 @@
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
+import localFont from "next/font/local";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Header } from "@/components/header";
-import { themeScript } from "@/components/theme-toggle";
-import { currentRole, profile } from "@/content/data";
-import { isLocale, locales, ui } from "@/lib/i18n";
+import { jobs, profile } from "@/content/data";
+import { isLocale, locales } from "@/lib/i18n";
 import "../globals.css";
+
+const instrumentSerif = localFont({
+  src: [
+    { path: "../../fonts/instrument-serif-latin-400-normal.woff2", style: "normal", weight: "400" },
+    { path: "../../fonts/instrument-serif-latin-400-italic.woff2", style: "italic", weight: "400" },
+  ],
+  variable: "--font-instrument-serif",
+  display: "swap",
+});
 
 export const dynamicParams = false;
 
@@ -18,10 +27,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const title = `${profile.name} — ${profile.role[locale]}`;
+  const description = profile.intro[locale];
   return {
     metadataBase: new URL(profile.url),
     title: { default: title, template: `%s — ${profile.name}` },
-    description: profile.headline[locale],
+    description,
     alternates: {
       canonical: `/${locale}`,
       languages: { es: "/es", en: "/en" },
@@ -29,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       type: "website",
       title,
-      description: profile.headline[locale],
+      description,
       url: `/${locale}`,
       siteName: profile.name,
       locale: locale === "es" ? "es_AR" : "en_US",
@@ -39,10 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#fbfaf8" },
-    { media: "(prefers-color-scheme: dark)", color: "#141210" },
-  ],
+  themeColor: "#0a0b0d",
 };
 
 export default async function LocaleLayout({
@@ -54,7 +61,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
-  const t = ui[locale];
+  const current = jobs[0];
   const personJsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -63,7 +70,7 @@ export default async function LocaleLayout({
     email: `mailto:${profile.email}`,
     jobTitle: profile.role[locale],
     description: profile.intro[locale],
-    worksFor: { "@type": "Organization", name: currentRole.company, url: currentRole.url },
+    worksFor: { "@type": "Organization", name: current.company, url: current.url },
     alumniOf: [
       { "@type": "CollegeOrUniversity", name: "Universidad Tecnológica Nacional" },
       { "@type": "EducationalOrganization", name: "Escuela Da Vinci" },
@@ -72,19 +79,15 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={locale} className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
+    <html lang={locale} className={`${GeistSans.variable} ${GeistMono.variable} ${instrumentSerif.variable}`}>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
       </head>
-      <body className="min-h-dvh font-sans">
+      <body className="min-h-dvh overflow-x-hidden font-sans">
         <Header locale={locale} />
         {children}
-        <footer className="mx-auto max-w-2xl px-6 pb-12 pt-8">
-          <div className="flex flex-col gap-2 border-t border-border pt-6 text-xs text-subtle sm:flex-row sm:justify-between">
-            <p>{t.builtWith}</p>
-            <p className="font-mono">© {new Date().getFullYear()}</p>
-          </div>
+        <footer className="mx-auto max-w-[1280px] px-5 pb-14 sm:px-10">
+          <p className="font-mono text-xs text-subtle">© {new Date().getFullYear()} {profile.name}</p>
         </footer>
       </body>
     </html>

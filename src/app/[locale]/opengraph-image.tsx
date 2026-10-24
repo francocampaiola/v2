@@ -23,16 +23,16 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
           flexDirection: "column",
           justifyContent: "space-between",
           padding: 80,
-          background: "#141210",
+          background: "#0a0b0d",
           color: "#f3f1ee",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 16, fontSize: 28, color: "#a8a29e" }}>
-          <div style={{ width: 14, height: 14, borderRadius: 999, background: "#f0703a" }} />
-          {profile.name} · {profile.role[locale]}
+          <div style={{ width: 14, height: 14, borderRadius: 999, background: "#ff6a3d" }} />
+          {`${profile.name} · ${profile.role[locale]}`}
         </div>
         <div style={{ fontSize: 60, lineHeight: 1.15, letterSpacing: -1.5, maxWidth: 980 }}>
-          {profile.headline[locale]}
+          {`${profile.headline.start[locale]} ${profile.headline.accent[locale]} ${profile.headline.end[locale]}`}
         </div>
         <div style={{ fontSize: 24, color: "#78716c" }}>francocampaiola.com</div>
       </div>
