@@ -13,7 +13,9 @@ export function GET() {
     "",
     "## Work",
     "",
-    ...jobs.map((j) => `- ${j.role.en}, ${j.company} (${j.start.en} – ${j.end?.en ?? "now"}): ${j.summary.en}`),
+    ...jobs.map(
+      (j) => `- [${j.role.en}, ${j.company}](${profile.url}/en/work/${j.company.toLowerCase()}) (${j.start.en} – ${j.end?.en ?? "now"}): ${j.summary.en}`,
+    ),
     "",
     "## Personal projects",
     "",

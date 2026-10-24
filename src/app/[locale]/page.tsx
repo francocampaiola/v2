@@ -62,20 +62,19 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
         <ol className="mt-8 flex flex-col sm:mt-10">
           {jobs.map((job, i) => (
-            <li key={job.company} className="grid items-center gap-4 border-t border-rule py-5 sm:grid-cols-[220px_minmax(0,1fr)_190px] sm:gap-8">
+            <li key={job.company} className="border-t border-rule">
+              <Link href={`/${locale}/work/${job.company.toLowerCase()}`} className="group grid items-center gap-4 py-5 sm:grid-cols-[220px_minmax(0,1fr)_190px] sm:gap-8">
               <Image
                 src={job.image}
                 alt={job.alt[locale]}
                 width={440}
                 height={240}
                 sizes="(min-width: 640px) 220px, 100vw"
-                className="aspect-[11/6] w-full rounded-xl border border-border object-cover sm:w-[220px]"
+                className="aspect-[11/6] w-full rounded-xl border border-border object-cover transition-transform duration-500 group-hover:scale-[1.02] sm:w-[220px]"
               />
               <div className="flex flex-col gap-1.5">
                 <p className="text-xl font-medium tracking-tight sm:text-2xl">
-                  <a href={job.url} target="_blank" rel="noreferrer" className="hover:text-accent">
-                    {job.company}
-                  </a>{" "}
+                  <span className="transition-colors group-hover:text-accent">{job.company}</span>{" "}
                   <span className="font-normal text-subtle">· {job.role[locale]}</span>
                 </p>
                 <p className="text-[15px] leading-relaxed text-muted">{job.summary[locale]}</p>
@@ -83,6 +82,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               <p className={`font-mono text-[13px] sm:text-right ${i === 0 ? "text-live" : "text-subtle"}`}>
                 {job.start[locale]} — {job.end?.[locale] ?? t.present}
               </p>
+              </Link>
             </li>
           ))}
         </ol>

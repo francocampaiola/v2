@@ -3,7 +3,7 @@
 /* eslint-disable @next/next/no-img-element -- íconos SVG chicos y decorativos */
 import Image from "next/image";
 import type { Locale } from "@/lib/i18n";
-import { useStepLoop } from "./use-step-loop";
+import { useStepLoop } from "@/components/use-step-loop";
 
 // Las demos de FACHA recreadas con el lenguaje de su landing, en modo oscuro: guiones de pasos en loop,
 // transiciones de 700 ms con la curva de FACHA y datos de ejemplo de una marca ficticia.

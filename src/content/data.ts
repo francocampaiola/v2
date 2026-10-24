@@ -128,6 +128,7 @@ export const projects: Project[] = [
   },
   {
     name: "Propinita",
+    slug: "propinita",
     period: "2024 — 2025",
     summary: {
       es: "Propinas digitales con QR y Mercado Pago. Mi tesis y mi primer producto.",
@@ -141,6 +142,7 @@ export const projects: Project[] = [
   },
   {
     name: "Persi",
+    slug: "persi",
     period: "2026",
     summary: {
       es: "Finanzas y tareas con un asistente de IA que registra gastos por voz.",
