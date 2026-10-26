@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import localFont from "next/font/local";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/header";
 import { jobs, profile } from "@/content/data";
 import { isLocale, locales } from "@/lib/i18n";
@@ -89,6 +90,7 @@ export default async function LocaleLayout({
         <footer className="mx-auto max-w-[1280px] px-5 pb-14 sm:px-10">
           <p className="font-mono text-xs text-subtle">© {new Date().getFullYear()} {profile.name}</p>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
